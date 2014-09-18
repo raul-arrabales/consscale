@@ -1,0 +1,143 @@
+<style type="text/css">
+
+BODY
+{ 
+  	font-family: Helvetica, arial, sans-serif;
+	font-size: 14px;
+	padding:0px; 
+	margin:0px; 
+}
+
+TD
+{
+	font-size: 14px;
+}
+
+
+H1
+{
+	font-size: 14px;
+}
+
+H2
+{
+	font-size: 14px;
+}
+
+H3
+{
+	font-size: 14px;
+}
+
+#footer
+{
+	font-size: 12px;
+}
+
+P
+{
+        font-family: Helvetica, arial, sans-serif;
+        line-height: 1.4;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#results 
+{ 
+	position: absolute; 
+	overflow:hidden; 
+	top:2px; 
+	left:2px; 
+	background-color: #EEEEEE;
+	width: 400px;
+}
+
+table.resultstable 
+{
+	border-width: 2px;
+	border-style: solid;
+	table-layout: fixed;
+	border-color: #AAAAAA;
+	border-collapse: separate;
+	background-color: #EEEEEE;
+	font-family: Tahoma, Verdana, arial;
+}
+
+#userinput 
+{ 
+	margin-left: 404px; 
+	font-family: Tahoma, verdana, arial;
+}
+
+#levels
+{
+	font-family: Tahoma, verdana, arial;
+}
+  
+.BGwhite
+{
+	background-color: #FFFFFF;
+	color: blue;
+	font-size: 15px;
+	font-weight: bold;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #CCCCCC;
+	border-collapse: separate;
+}
+
+.BGremarks
+{
+	background-color: #FFFFFF;
+	color: blue;
+	font-size: 12px;	
+	border-width: 1px;
+	border-style: solid;
+	border-color: #CCCCCC;
+	border-collapse: separate;
+}
+
+.BGyellow
+{
+	background-color: #FEFFBF;
+	color: blue;
+	font-size: 15px;
+	font-weight: bold;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #CCCCCC;
+	border-collapse: separate;
+}
+
+.BGyellowBorder
+{
+	background-color: #FEFECF;
+	color: blue;
+	font-size: 15px;
+	font-weight: bold;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #2F497B;
+	border-collapse: separate;
+}
+
+.FontBlue
+{
+	font-size: 15px;
+	font-weight: bold;
+	color: blue;
+}
+
+.FontDarkBlue
+{
+	font-size: 15px;
+	font-weight: bold;
+	color: #0000AA;
+}
+
+A:link {text-decoration: none; color: blue;}
+A:visited {text-decoration: none; color: blue;}
+A:active {text-decoration: none; color: blue;}
+A:hover {text-decoration: underline; color: blue;}
+
+</style>

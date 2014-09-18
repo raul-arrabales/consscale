@@ -1,0 +1,814 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0046)http://www.consscale.com/calc_embed_30_en.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>www.consscale.com | ConsScale Calculator - A Machine Consciousness Scale</title>
+
+
+<meta name="description" content="ConsScale, a Machine Consciousness Scale">
+<meta name="keywords" content="consscale,machine consciousness,artificial consciousness,artificial intelligence,artificial agents,intelligent agents,scale,metrics,consciousness,ranking,cognitive,cognition,cognitive agents,artificial cognitive systems">
+<link rel="shortcut icon" href="http://www.consscale.com/favicon.ico">
+
+
+<link rel="stylesheet" type="text/css" href="./calc_30_files/csstyle.css">
+
+<!-- Move results panel on scroll so it is always visible -->
+<script src="./calc_30_files/mixc.js" type="text/javascript"></script>
+
+<script>
+function move_results()
+{
+	xMoveTo("results",2,xScrollTop()+2)
+}
+window.onscroll=move_results
+</script>
+
+<!-- Preload images -->
+<script type="text/javascript">
+<!-- 
+
+Imagem1 = new Image();
+Image0 = new Image();
+Image1 = new Image();
+Image2 = new Image();
+Image3 = new Image();
+Image4 = new Image();
+Image5 = new Image();
+Image6 = new Image();
+Image7 = new Image();
+Image8 = new Image();
+Image9 = new Image();
+Image10 = new Image();
+Image11 = new Image();
+
+Imagem1.src = "csm1.jpg";
+Image0.src = "cs0.jpg";
+Image1.src = "cs1.jpg";
+Image2.src = "cs2.jpg";
+Image3.src = "cs3.jpg";
+Image4.src = "cs4.jpg";
+Image5.src = "cs5.jpg";
+Image6.src = "cs6.jpg";
+Image7.src = "cs7.jpg";
+Image8.src = "cs8.jpg";
+Image9.src = "cs9.jpg";
+Image10.src = "cs10.jpg";
+Image11.src = "cs11.jpg";
+
+-->
+</script>
+
+
+</head>
+
+<body onload="InitConsScale()">
+
+<!-- Include ConsScale calculation JavaScript code -->
+<script language="JavaScript" src="./calc_30_files/consscale_30.js"></script>
+
+
+<!-- Main table -->
+<table>
+<tbody><tr>
+
+
+<!-- RESULTS PANEL -->
+
+<td>
+
+<div id="results" align="center" style="left: 2px; top: 2px;">
+<table width="400px" align="center" class="resultstable">
+<tbody><tr><td>
+
+
+<!-- RESULTS TABLE -->
+
+
+<center><h1><i>ConsScale</i> Generic Calculator</h1></center>
+<form name="rform">
+<table align="center">
+<tbody><tr> 
+ <td align="center">Architectural Level</td>
+ <td align="center"><b><i>ConsScale Level</i></b></td>
+</tr>
+<tr>
+ <td class="BGwhite" id="CONSSCALE_alevel">(-1) Disembodied</td>
+ <td class="BGyellowBorder" id="CONSSCALE_level" align="center">(-1) Disembodied</td>
+</tr>
+<tr>
+ <td class="BGremarks">CQS exponential curve graph:</td>
+ <td class="BGremarks">Cognitive Profile
+      <input type="radio" name="chartType" id="chartType" value="bar" checked="" onclick="DisplayResults();"> Bar
+      <input type="radio" name="chartType" id="chartType" value="barh" onclick="DisplayResults();"> HBar
+</td>
+</tr>
+<tr>
+ <td align="center" class="BGwhite" id="CONSSCALE_image"><img src="./calc_30_files/csm1.jpg"></td>
+ <td align="center" class="BGwhite" id="CONSSCALE_graph"><img src="./calc_30_files/chart" alt="ConsScale Cognitive Profile Chart"></td> 
+</tr>
+<tr>
+ <td><hr size="1" noshade="noshade" width="100%"></td>
+ <td class="BGremarks">
+     <input type="radio" name="chartType" id="chartType" value="line" onclick="DisplayResults();"> Line     
+     <input type="radio" name="chartType" id="chartType" value="radar" onclick="DisplayResults();"> Radar
+     <input type="radio" name="chartType" id="chartType" value="cmeter" onclick="DisplayResults();"> Meter
+ </td>
+</tr> 
+<tr>
+ <td><b>CLS (0 - 1.55)</b></td>
+ <td><b>CQS (0 - 1000)</b> (<a href="http://www.consscale.com/cqs.html"><b>?</b></a>)</td>
+</tr>
+<tr>
+ <td class="BGwhite" id="CONSSCALE_cls">0</td>
+ <td class="BGyellow" id="CONSSCALE_cqs">0</td>
+</tr>
+<tr>
+ <td>&nbsp;</td>
+</tr>
+<tr>
+ <td><b>Remarks</b></td>
+</tr>
+<tr>
+ <td class="BGremarks" id="CONSSCALE_remarks">Started. Use Reset button to clear all data.</td>
+ <td align="center"><input type="button" name="AdaptiveButton" value="Level 3" onclick="FillAdaptive()"> <input type="button" name="ResetButton" value="Reset" onclick="ResetAll()"> <input type="button" name="ReportButton" value="Report" onclick="GenerateReport(&#39;3.0 Generic&#39;)"></td>
+</tr>
+</tbody></table>
+</form>
+
+
+<i>ConsScale</i> Calculator. 
+<a target="_blank" href="http://www.conscious-robots.com/raul/contact-me.html">Raúl Arrabales</a> 
+<br>Version 3.0 - Nov. 2010
+
+</td></tr>
+</tbody></table>
+</div>
+</td>
+
+
+
+<!-- OPTIONS SELECCTION TABLES -->
+
+
+
+<td>
+
+<div id="userinput">
+
+
+<!-- ConsScale Main Menu -->
+
+
+<center><a name="logo"><img src="./calc_30_files/logo_calc.png" alt="ConsScale Generic Calculator"></a><hr size="1">
+
+
+<!-- End of ConsScale Main Menu --> 
+
+<h2 align="center">
+See below how to rate your agent (or click <a target="_top" href="http://www.consscale.com/en/help/faq/5-can-you-show-me-an-example-of-application-of-consscale-.html">here</a> for an example).
+<br>Click <a target="_top" href="http://www.consscale.com/en/levels/description.html">here</a> for a description of <i>ConsScale</i> levels.</h2>
+
+<hr size="1"></center>
+
+<h1><i>ConsScale</i> Generic Calculator: Input Forms.</h1> 
+<p> 
+<b>1.-</b> Select the architectural components.<br>
+<b>2.-</b> Indicate the behavioral profile (cognitive skills form).<br>
+</p>
+<p><b>Hints:</b><br>
+- Use the checkboxes below to select the features of your implementation.<br>
+- The results will appear immediately in the left panel.<br>
+- The radar graph might take up to one second to be updated after a change.<br>
+- Button <b>[Level 3]</b> will load the profile of a pure <i>ConsScale Adaptive</i> agent.<br>
+- Use button <b>[Reset]</b> to start from scratch (instead of page reload).<br>
+- Use button <b>[Report]</b> to generate a complete report of your rating.<br>
+</p>
+
+<hr>
+
+<form name="scaleform">
+
+<h1>Name and version of the agent:</h1>
+
+<table>
+	<tbody><tr valign="top">
+		<td>Please, enter the name (and version) of your implementation (if you want it to appear when you generate the report):</td>
+	</tr>
+
+	<tr valign="top">
+		<td><input type="text" name="ImpName" id="ImpName" size="40" value="Name:   Version:  "></td>
+	</tr>
+</tbody></table>
+
+
+<h1><a name="archform">Agent's Architectural Components:</a><a></a></h1><a>
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" checked="" disabled=""></td>
+		<td><b>E</b></td>
+		<td>Environment.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,0);"></td>
+		<td><b>B</b></td>
+		<td>Physical or software simulated body.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,1);"></td>
+		<td><b>S<sub>propio</sub></b></td>
+		<td>Proprioceptive Sensory Machinery.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,2);"></td>
+		<td><b>S<sub>ext</sub></b></td>
+		<td>Exteroceptive Sensory Machinery.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,3);"></td>
+		<td><b>A</b></td>
+		<td>Action Machinery.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,4);"></td>
+		<td><b>R</b></td>
+		<td>Sensorimotor Coordination Machinery.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,5);"></td>
+		<td><b>M</b></td>
+		<td>Memory.</td>
+	</tr>
+	<tr>
+		<td><hr></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,6);"></td>
+		<td><b>M<sup>n</sup></b></td>
+		<td>Capability of multiple context representation in memory.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,7);"></td>
+		<td><b>Att</b></td>
+		<td>Mechanism for directing S and A to specific E<sub>i</sub>, i.e. Attention mechanism.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,8);"></td>
+		<td><b>SsA</b></td>
+		<td>Self-status assessment mechanism.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,9);"></td>
+		<td><b>I</b></td>
+		<td>Mechanism for representation of self.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,10);"></td>
+		<td><b>O</b></td>
+		<td>Mechanism for representation of other selves.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,11);"></td>
+		<td><b>AR</b></td>
+		<td>Accurate report mechanism.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,12);"></td>
+		<td><b>AVR</b></td>
+		<td>Accurate verbal report mechanism.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,13);"></td>
+		<td><b>R<sup>n</sup></b></td>
+		<td>Mechanism to run and synchronize several streams of consciousness in one self.</td>
+	</tr>
+</tbody></table>
+
+<hr>
+
+</a><h1><a></a><a name="csform">ConsScale levels Cognitive Skills (CS<sub>i,j</sub>):</a></h1>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level -1. Disembodied</b></td>
+		<td> - L<sub>-1</sub> = </td>
+		<td>0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="LevelM1Box" disabled=""></td>
+		<td><b>N/A</b></td>
+		<td>No CS considered at this level.</td>
+	</tr>
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 0. Isolated</b></td>
+		<td> - L<sub>0</sub> = </td>
+		<td id="L0">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level0Box" disabled=""></td>
+		<td><b>N/A</b></td>
+		<td>No CS considered at this level.</td>
+	</tr>
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 1. Decontrolled</b></td>
+		<td> - L<sub>1</sub> = </td>
+		<td id="L1">0.00</td>
+	</tr>
+</tbody></table>
+
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level1Box" disabled=""></td>
+		<td><b>N/A</b></td>
+		<td>No CS considered at this level.</td>
+	</tr>
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 2. Reactive</b></td>
+		<td> - L<sub>2</sub> = </td>
+		<td class="FontBlue" id="L2">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level2Box" onclick="LevelCheck(this,2,1);"></td>
+		<td><b>CS<sub>2,1</sub></b></td>
+		<td id="BP21">Fixed reactive responses ("reflexes").</td>
+	</tr>
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 3. Adaptive</b></td>
+		<td> - L<sub>3</sub> = </td>
+		<td class="FontBlue" id="L3">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+<tbody><tr>
+<td><input type="checkbox" name="Level3AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level3Box,3);" unchecked=""></td>
+<td>Check/Uncheck All</td>
+</tr>
+</tbody></table>
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level3Box" onclick="LevelCheck(this,3,1);" unchecked=""></td>
+		<td><b>CS<sub>3,1</sub></b></td>
+		<td id="BP31">Autonomous acquisition of new adaptive reactive responses.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level3Box" onclick="LevelCheck(this,3,2);"></td>
+		<td><b>CS<sub>3,2</sub></b></td>
+		<td id="BP32">Usage of propioceptive sensing for embodied adaptive responses.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level3Box" onclick="LevelCheck(this,3,3);"></td>
+		<td><b>CS<sub>3,3</sub></b></td>
+		<td id="BP33">Selection of relevant sensory information.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level3Box" onclick="LevelCheck(this,3,4);"></td>
+		<td><b>CS<sub>3,4</sub></b></td>
+		<td id="BP34">Selection of relevant motor information.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level3Box" onclick="LevelCheck(this,3,5);"></td>
+		<td><b>CS<sub>3,5</sub></b></td>
+		<td id="BP35">Selection of relevant memory information.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level3Box" onclick="LevelCheck(this,3,6);"></td>
+		<td><b>CS<sub>3,6</sub></b></td>
+		<td id="BP36">Evaluation (positive or negative) of selected objects or events.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level3Box" onclick="LevelCheck(this,3,7);"></td>
+		<td><b>CS<sub>3,7</sub></b></td>
+		<td id="BP37">Selection of what needs to be stored in memory.</td>
+	</tr>
+	
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 4. Attentional</b></td>
+		<td> - L<sub>4</sub> = </td>
+		<td class="FontBlue" id="L4">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+<tbody><tr>
+<td><input type="checkbox" name="Level4AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level4Box,4);" unchecked=""></td>
+<td>Check/Uncheck All</td>
+</tr>
+</tbody></table>
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,1);"></td>
+		<td><b>CS<sub>4,1</sub></b></td>
+		<td id="BP41">Trial and error learning. Re-evaluation of selected objects or events.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,2);"></td>
+		<td><b>CS<sub>4,2</sub></b></td>
+		<td id="BP42">Directed behaviour toward specific targets like following or escape.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,3);"></td>
+		<td><b>CS<sub>4,3</sub></b></td>
+		<td id="BP43">Evaluation of the performance in the achievement of a single goal.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,4);"></td>
+		<td><b>CS<sub>4,4</sub></b></td>
+		<td id="BP44">Basic planning capability: calculation of next n sequential actions.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,5);"></td>
+		<td><b>CS<sub>4,5</sub></b></td>
+		<td id="BP45">Depictive representations of percepts.</td>
+	</tr>
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 5. Executive</b></td>
+		<td> - L<sub>5</sub> = </td>
+		<td class="FontBlue" id="L5">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+<tbody><tr>
+<td><input type="checkbox" name="Level5AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level5Box,5);" unchecked=""></td>
+<td>Check/Uncheck All</td>
+</tr>
+</tbody></table>
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,1);"></td>
+		<td><b>CS<sub>5,1</sub></b></td>
+		<td id="BP51">Ability to move back and forth between multiple tasks.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,2);"></td>
+		<td><b>CS<sub>5,2</sub></b></td>
+		<td id="BP52">Seeking of multiple goals.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,3);"></td>
+		<td><b>CS<sub>5,3</sub></b></td>
+		<td id="BP53">Evaluation of the performance in the achievement of multiple goals.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,4);"></td>
+		<td><b>CS<sub>5,4</sub></b></td>
+		<td id="BP54">Autonomous reinforcement learning (emotional learning).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,5);"></td>
+		<td><b>CS<sub>5,5</sub></b></td>
+		<td id="BP55">Advanced planning capability considering all active goals.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,6);"></td>
+		<td><b>CS<sub>5,6</sub></b></td>
+		<td id="BP56">Ability to generate selected mental content with grounded meaning.</td>
+	</tr>	
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 6. Emotional</b></td>
+		<td> - L<sub>6</sub> = </td>
+		<td class="FontBlue" id="L6">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+<tbody><tr>
+<td><input type="checkbox" name="Level6AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level6Box,6);" unchecked=""></td>
+<td>Check/Uncheck All</td>
+</tr>
+</tbody></table>
+
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,1);"></td>
+		<td><b>CS<sub>6,1</sub></b></td>
+		<td id="BP61">Self-status assessment (background emotions).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,2);"></td>
+		<td><b>CS<sub>6,2</sub></b></td>
+		<td id="BP62">Background emotions cause effects in agent’s body.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,3);"></td>
+		<td><b>CS<sub>6,3</sub></b></td>
+		<td id="BP63">Representation of the effect of emotions in organism (feelings).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,4);"></td>
+		<td><b>CS<sub>6,4</sub></b></td>
+		<td id="BP64">Ability to hold a precise and updated map of body schema.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,5);"></td>
+		<td><b>CS<sub>6,5</sub></b></td>
+		<td id="BP65">Abstract learning (learned lessons generalization).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,6);"></td>
+		<td><b>CS<sub>6,6</sub></b></td>
+		<td id="BP66">Ability to represent a flow of integrated percepts including self-status.</td>
+	</tr>	
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 7. Self-Conscious</b></td>
+		<td> - L<sub>7</sub> = </td>
+		<td class="FontBlue" id="L7">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+<tbody><tr>
+<td><input type="checkbox" name="Level7AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level7Box,7);" unchecked=""></td>
+<td>Check/Uncheck All</td>
+</tr>
+</tbody></table>
+
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,1);"></td>
+		<td><b>CS<sub>7,1</sub></b></td>
+		<td id="BP71">Representation of the relation between self and perception.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,2);"></td>
+		<td><b>CS<sub>7,2</sub></b></td>
+		<td id="BP72">Representation of the relation between self and action.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,3);"></td>
+		<td><b>CS<sub>7,3</sub></b></td>
+		<td id="BP73">Representation of the relation between self and feelings.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,4);"></td>
+		<td><b>CS<sub>7,4</sub></b></td>
+		<td id="BP74">Self-recognition capability.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,5);"></td>
+		<td><b>CS<sub>7,5</sub></b></td>
+		<td id="BP75">Advance planning including the self as an actor in the plans.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,6);"></td>
+		<td><b>CS<sub>7,6</sub></b></td>
+		<td id="BP76">Use of imaginational states in planning.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,7);"></td>
+		<td><b>CS<sub>7,7</sub></b></td>
+		<td id="BP77">Learning of tool usage.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,8);"></td>
+		<td><b>CS<sub>7,8</sub></b></td>
+		<td id="BP78">Ability to represent and self-report mental content (continuous inner flow of percepts).</td>
+	</tr>	
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 8. Empathic</b></td>
+		<td> - L<sub>8</sub> = </td>
+		<td class="FontBlue" id="L8">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+<tbody><tr>
+<td><input type="checkbox" name="Level8AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level8Box,8);" unchecked=""></td>
+<td>Check/Uncheck All</td>
+</tr>
+</tbody></table>
+
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,1);"></td>
+		<td><b>CS<sub>8,1</sub></b></td>
+		<td id="BP81">Ability to model others as subjective selves.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,2);"></td>
+		<td><b>CS<sub>8,2</sub></b></td>
+		<td id="BP82">Learning by imitation of a counterpart.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,3);"></td>
+		<td><b>CS<sub>8,3</sub></b></td>
+		<td id="BP83">Ability to collaborate with others in the pursuit of a common goal.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,4);"></td>
+		<td><b>CS<sub>8,4</sub></b></td>
+		<td id="BP84">Social planning (planning with socially aware plans).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,5);"></td>
+		<td><b>CS<sub>8,5</sub></b></td>
+		<td id="BP85">Ability to make new tools.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,6);"></td>
+		<td><b>CS<sub>8,6</sub></b></td>
+		<td id="BP86">Inner imagery is enriched with mental content related to the model of others.</td>
+	</tr>	
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 9. Social</b></td>
+		<td> - L<sub>9</sub> = </td>
+		<td class="FontBlue" id="L9">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+<tbody><tr>
+<td><input type="checkbox" name="Level9AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level9Box,9);" unchecked=""></td>
+<td>Check/Uncheck All</td>
+</tr>
+</tbody></table>
+
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level9Box" onclick="LevelCheck(this,9,1);"></td>
+		<td><b>CS<sub>9,1</sub></b></td>
+		<td id="BP91">Ability to develop Machiavellian strategies like lying and cunning.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level9Box" onclick="LevelCheck(this,9,2);"></td>
+		<td><b>CS<sub>9,2</sub></b></td>
+		<td id="BP92">Social learning (learning of new Mechiavellian strategies).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level9Box" onclick="LevelCheck(this,9,3);"></td>
+		<td><b>CS<sub>9,3</sub></b></td>
+		<td id="BP93">Advanced communication skills (accurate report of mental content).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level9Box" onclick="LevelCheck(this,9,4);"></td>
+		<td><b>CS<sub>9,4</sub></b></td>
+		<td id="BP94">Groups are able to develop a culture.</td>
+	</tr>	
+	<tr valign="top">
+		<td><input type="checkbox" name="Level9Box" onclick="LevelCheck(this,9,5);"></td>
+		<td><b>CS<sub>9,5</sub></b></td>
+		<td id="BP95">Ability to modify and adapt the environment to agent’s needs.</td>	
+	</tr>
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 10. Human-Like</b></td>
+		<td> - L<sub>10</sub> = </td>
+		<td class="FontBlue" id="L10">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+<tbody><tr>
+<td><input type="checkbox" name="Level10AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level10Box,10);" unchecked=""></td>
+<td>Check/Uncheck All</td>
+</tr>
+</tbody></table>
+
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level10Box" onclick="LevelCheck(this,10,1);"></td>
+		<td><b>CS<sub>10,1</sub></b></td>
+		<td id="BP101">Accurate verbal report. Advanced linguistic capabilities.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level10Box" onclick="LevelCheck(this,10,2);"></td>
+		<td><b>CS<sub>10,2</sub></b></td>
+		<td id="BP102">Ability to pass the Turing test.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level10Box" onclick="LevelCheck(this,10,3);"></td>
+		<td><b>CS<sub>10,3</sub></b></td>
+		<td id="BP103">Groups are able to develop a civilization and advance culture and technology.</td>
+	</tr>
+</tbody></table>
+
+<br>
+
+<table>
+	<tbody><tr>
+		<td><b>Level 11. Super-Conscious</b></td>
+		<td> - L<sub>11</sub> = </td>
+		<td class="FontBlue" id="L11">0.00</td>
+	</tr>
+</tbody></table>
+
+<table>
+	<tbody><tr valign="top">
+		<td><input type="checkbox" name="Level11Box" onclick="LevelCheck(this,11,1);"></td>
+		<td><b>CS<sub>11,1</sub></b></td>
+		<td id="BP111">Ability to manage several streams of consciousness.</td>
+	</tr>
+</tbody></table>
+
+<hr>
+
+</form>
+
+<br>
+
+<div id="footer">
+<center>
+<i>ConsScale</i> Form. <a target="_blank" href="http://www.conscious-robots.com/raul/contact-me.html">Raúl Arrabales</a> - Version 3.0 - Nov 2010
+
+<br><br>
+<font style="font-size:12px">
+<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="./calc_30_files/80x15.png"></a><br>This <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">work</span> is licenced under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Licence</a>.
+</font> 
+
+</center>
+</div>
+<br>&nbsp;<br>
+
+
+</div>
+
+<!-- Close main table -->
+</td>
+</tr>
+</tbody></table>
+
+
+
+
+
+
+
+
+</body></html>
