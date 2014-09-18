@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+
+<title>Conscious-Robots.com | FAQ - ConsScale: A Machine Consciousness Scale</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="FAQ. ConsScale, a Machine Consciousness Scale. Levels Summary">
+<meta name="keywords" content="faq,consscale,levels,machine consciousness,artificial consciousness,artificial intelligence,artificial agents,intelligent agents,scale,metrics,consciousness,ranking,cognitive,cognition,cognitive agents,artificial cognitive systems">
+<link rel="stylesheet" type="text/css" href="csstyle.css" />
+
+
+
+</head>
+
+<body>
+
+<!-- Main table -->
+<table align="center" width="80%">
+<tr>
+<td>
+
+<div id="levels">
+
+<!-- ConsScale Main Menu -->
+
+<center><a name="logo"><img src="logo_consscale.png" alt="ConsScale"></a><hr size="1">
+<a href="index.html">Calculator</a> | 
+<a href="levels.html">Levels</a> |
+<a href="cqs.html">CQS</a> |
+<a href="faq.html"><b>FAQ</b></a> |
+<a href="papers.html">Papers</a> |
+<a href="http://www.conscious-robots.com">Conscious-Robots.com</a> 
+<hr size="1"></center>
+
+<!-- End of ConsScale Main Menu -->
+
+<h2 align="center">
+<i>ConsScale</i> Frequently Asked Questions (FAQ). </h2>
+<hr size="1">
+
+<p align="left">
+<a href="#q1">1.- What is <i>ConsScale</i>?</a>
+<br><a href="#example">2.- Can you show me an example of application of <i>ConsScale</i>?</a>
+<br><a href="#q3">3.- Does <i>ConsScale</i> deal with the hard problem of consciousness?</a>
+<br><a href="#q4">4.- Can <i>ConsScale</i> be applied to purely software agents?</a>
+<br><a href="#q5">5.- How <i>ConsScale</i> is to be applied to a specific implementation?</a>
+<br><a href="#q6">6.- Can <i>ConsScale</i> be regarded as a roadmap for MC implementations?</a>
+<br><a href="#q7">7.- Are there any other scales for measuring Machine Consciousness?</a>
+</p>
+
+Any other question you would like to be answered here, please <a href="http://www.conscious-robots.com/raul/contact-me.html">let me know</a>.
+
+
+<hr size="1">
+
+<p align="left"><a name="q1"><b>1.- What is <i>ConsScale</i>?</b></a>
+</p>
+<p align="justify"><i>ConsScale</i> is a framework for characterizing the cognitive power of a creature. <i>ConsScale</i> includes the definition of an ordered list of cognitive levels arranged across a developmental path. The arrangement of the levels is inspired on the ontogeny and phylogeny of consciousness in biological organisms.
+<br>&nbsp;&nbsp;The basic assumption is that there exist different kinds of minds, and they can be characterized in terms of <i>ConsScale</i> criteria. Using <i>ConsScale</i>, characterization and assessment of consciousness can be performed using three related tools: 
+<br>&nbsp;
+<br>- the conceptual <a href="levels.html">levels of consciousness</a>, 
+<br>- the <a href="cqs.html">CQS</a> (ConsScale Quantitative Score), and 
+<br>- the <i>ConsScale</i> <a href="index.html">radar graph</a> representation.
+<br>&nbsp;
+<br>In order to assess the level of artificial consciousness of an agent using <i>ConsScale</i>, its architectural components have to be identified and its cognitive skills tested. Using this information as input, the scale can be used to obtain both a qualitative and a quantitative measure of consciousness:
+</p><p align="center"><img src="consscale_scheme.png" alt="ConsScale Scheme" align="center">
+</p>
+<hr size="1">
+<p align="left"><b><a name="example">2.- This is an example</a> of a cognitive architecture implementation rated using <i>ConsScale</i>:</b>
+</p>
+<table style="border:1px solid #666666;">
+<tr><td><b>Name of implementation:</b></td><td>CERA-CRANIUM UT2004 Adaptive-Bot v3.4.</td></tr>
+<tr><td><b>Description:</b></td><td>Unreal Tournament 2004 autonomous bot implemented using the CERA-CRANIUM cognitive architecture.</td></tr>
+<tr><td><b>Architectural Components:</b></td><td>B, S<sub>proprio</sub>, S<sub>ext</sub>, A, R, M (see <a href="levels.html">here</a> for a description)</td></tr>
+<tr><td><b>Cognitive Skills:</b></td><td>CS<sub>2,1</sub>; CS<sub>3,1</sub>; CS<sub>3,2</sub>; CS<sub>4,1</sub>; CS<sub>4,2</sub>; CS<sub>4,3</sub>; CS<sub>4,4</sub>; CS<sub>4,5</sub>; CS<sub>4,10</sub>; CS<sub>5,2</sub>; CS<sub>5,4</sub> (see <a href="levels.html#table2">here</a> for a description)</td></tr>
+<tr><td><b>Radar Graph:</b></td><td><img src="chart_ex1.png" alt="ConsScale Radar Chart"></td></tr>
+<tr><td><b>CQS Graph:</b></td><td><img src="cs3.jpg" alt="ConsScale Level 3. Adaptive"></td></tr>
+<tr><td><b>CQS Value:</b></td><td><b>2.69</b></td></tr>
+<tr><td><b><i>ConsScale</i> Level:</b></td><td><b>LEVEL 3. ADAPTIVE.</b></td></tr>
+<tr><td><b>Comments:</b></td><td>Although the implementation complies with some features of levels 4 and 5 it is rated as level 3. ConsScale requires the fulfilment of all cognitive skills of level i and also all lower levels in order to qualify as level i. <br>CQS for a pure level 3 agent is 2.22. The score of this agent (2.69) indicates that some additional features are in place. However, it is far from a level 4 agent who will score 12.21 or more. This can also be noticed in the radar graph, as L4 axis has a short spike (while L2 and L3 axes display full length lines).
+</td></tr>
+</table>
+</p>
+
+<hr size="1">
+
+<p align="left"><a name="q3"><b>3.- Does <i>ConsScale</i> deal with the hard problem of consciousness?</b></a>
+</p>
+<p align="justify">In principle, <i>ConsScale</i> is aimed exclusively at the "easy problems" of consciousness. In other words, the scale is focused on cognitive skills associated with consciousness, but makes no claims or look for any specific proof of phenomenal consciousness.
+<br>&nbsp;&nbsp;Even considering a purely functional point of view, setting aside the philosophical implications of phenomenology, the complexity of multiple cognitive processes and their associated combined dynamics makes it difficult to effectively model and design artificial conscious systems. 
+<br>&nbsp;&nbsp;Whether or not human-like conscious machines are possible remains an open question. However, many different cognitive skills, which usually are identified in humans, are the inspiration of nowadays artificial implementations.
+<br>&nbsp;&nbsp;Current research in artificial cognitive systems seems to conclude that a number of cognitive skills are to be successfully integrated into a single situated agent in order to build an artificial human-like mind. Furthermore, consciousness (at least from a functional point of view) might emerge as a result of the synergy developed during the interaction of multiple concurrent cognitive processes. But some of the pending design questions are: what is the right combination of cognitive skills? How exactly should they be integrated? What cognitive capabilities are completely required for consciousness? Which others are expendable? Which ones should be implemented first?
+<br>&nbsp;&nbsp;We have proposed <i>ConsScale</i> as an attempt to shed some light into the resolution of the former questions. The issue of phenomenal consciousness can be studied in parallel as more advanced forms of Machine Consciousness (<i>ConsScale</i> levels 4 to 10) are envisaged or even designed.
+</p>
+<hr size="1">
+
+
+<p align="left"><a name="q4"><b>4.- Can <i>ConsScale</i> be applied to purely software agents?</b></a>
+</p>
+<p align="justify">The scale is not oriented to any particular type of agents, but intended to be applicable to both physically-situated agents and purely software agents like web agents. In the latter case, activities like sending a message are considered at the same level as a physical action in terms of behavioral analysis.
+</p>
+<hr size="1">
+
+
+<p aign="left"><a name="q5"><b>5.- How <i>ConsScale</i> is to be applied to a specific implementation?</b></a>
+</p>
+<p align="justify"><i>ConsScale</i> levels are characterized by abstract architectural components and the cognitive skills they generate. Therefore, in order to determine the level of artificial consciousness of an implementation, the presence of a set of concrete cognitive skills (CS) has to be tested. <a href="level_tables.html#table2">This table</a> contains the list of CS defined in ConsScale.
+<br>&nbsp;&nbsp;In order to apply the scale to a particular MC implementation, concrete tests have to be defined to check whether or not the agent fulfills every CS<sub>i,j</sub> (see <a href="level_tables.html#table2">CS table</a>). In other words, while the scale is defined as a generic tool, the application is domain specific, as concrete domain tests have to be specified in order to evaluate the agent.
+</p>
+<hr size="1">
+
+
+<p aign="left"><a name="q6"><b>6.- Can <i>ConsScale</i> be regarded as a roadmap for MC implementations?</b></a>
+</p>
+<p align="justify">We believe that defining a scale for artificial consciousness is not only valuable as a tool for MC implementations comparative study, but also for establishing a possible engineering roadmap to be followed in the quest for conscious machines. Addressing the challenge of consciousness from the perspective of engineering involves defining a concrete plan. Most of current efforts are focused in particular aspects of consciousness; however, the way in which existing research projects might converge is not clear. Taking biological organisms as inspiration has been an obvious account for decades. Nevertheless, this inspiration usually takes the form of concrete functions or mechanisms, like attention or emotions, neglecting the whole picture. In this work, we propose to consider consciousness as the integrator that puts a mind together. Considering specific cognitive skills as individual or independent components will not help in the design of human-like machines. The idea is to re-define consciousness (at least, from the engineer's point of view) as a grand function which is composed of integrated cognitive capabilities. In this scenario, ConsScale suggests a path for the progressive development of artificial conscious agents. Other roadmaps could be defined. However, looking at how consciousness has evolved in nature seems to be a good approach. It does make sense to build empathic (level 8) agents in the first place, in order to be able to develop social (level 9) agents in the second place.
+<br>&nbsp;&nbsp;Whether or not the roadmap proposed in ConsScale is the best bet is an open question (possible enhancements of the scale could be thoroughly discussed elsewhere). Nonetheless, it certainly provides a plausible account for the incremental addition of integrated cognitive capabilities into an artificial system. Additionally, the definition and evolution of artificial consciousness metrics will help to determine the current state of the art, and to define the concrete objectives of the MC research field.
+</p>
+<hr size="1">
+
+
+<p aign="left"><a name="q7"><b>7.- Are there any other scales for measuring Machine Consciousness?</b></a>
+</p>
+<p align="justify"><i>ConsScale</i> is very oriented to the cognitive capabilities of the agent. As mentioned above, it doesn't make any claim about phenomenal consciousness. The <a href="http://www.davidgamez.eu/mc-thesis/pages/omc_scale.html" target="_blank">Ordinal Machine Consciousness scale</a> (OMC) by David Gamez is an attempt to make predictions about the consciousness of non-human systems.
+<br>&nbsp;&nbsp;Additionally, there exist other approaches for measuring consciousness in biological organisms, like information integration measures.</p>
+<hr size="1">
+
+ 
+
+</div>
+
+<!-- Close main table -->
+</td>
+</tr>
+</table>
+
+
+
+
+
+</body>
+
+</html>
