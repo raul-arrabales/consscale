@@ -1,0 +1,191 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+
+<title>www.consscale.com | ConsScale Quantitative Score (CQS) Scale</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ConsScale, a Machine Consciousness Scale. ConsScale Quantitative Score (CQS).">
+<meta name="keywords" content="cqs,consscale,levels,machine consciousness,artificial consciousness,artificial intelligence,artificial agents,intelligent agents,scale,metrics,consciousness,ranking,cognitive,cognition,cognitive agents,artificial cognitive systems">
+<link rel="stylesheet" type="text/css" href="csstyle.css" />
+<link rel="shortcut icon" href="http://www.consscale.com/favicon.ico" />
+
+
+</head>
+
+<body>
+
+<!-- Main table -->
+<table align="center" width="80%">
+<tr>
+<td>
+
+<!-- ConsScale Main Menu -->
+
+<div align="center" id="levels">
+
+<center><a name="logo"><img src="logo_consscale.png" alt="ConsScale"></a><hr size="1">
+<a href="index.html">Home</a> | 
+<a href="calc.html">Calculator</a> | 
+<a href="levels.html">Levels</a> |
+<a href="cqs.html"><b>CQS</b></a> |
+<a href="rating.html">Rating</a> |
+<a href="faq.html">FAQ</a> |
+<a href="papers.html">Papers</a> |
+<a href="code.html">Code</a> |
+<a href="http://www.conscious-robots.com">CR</a> 
+<hr size="1"></center>
+
+<!-- End of ConsScale Main Menu -->
+
+<h2 align="center">
+CQS is the <i>ConsScale</i> Quantitative Score.
+</h2>
+<p align="center">
+In addition to the qualitative measure provided by ConsScale in the form of the 13 conceptual levels
+<br>of consciousness, a related quantitative score (the CQS) can be also calculated.
+<br>See below for specific information about the CQS and how it is calculated.
+<br>&nbsp;
+<br>CQS possible values range from <b>0</b> to <b>1000</b>.
+<br>See <a href="#table1">Table 1</a> for main CQS reference values.
+<br>See <a href="#fig1">Figure 1</a> for a graphical representation of CQS values.
+<br>See <a href="#calc">Calculating the CQS</a> for an explanation of how CQS is calculated.
+<br>See <a href="#videocqs">Video CQS</a> for a brief presentation about CQS.
+</p>
+<hr size="1">
+
+<!-- TABLE 1 -->
+
+<br>&nbsp;<br>
+
+<div align=center>
+
+<a name="table1"><b>TABLE 1</b></a>. <i>ConsScale</i> CQS Values for Qualitative Reference Levels.
+<br>&nbsp;
+
+<table cellpadding="2" cellspacing="4">
+<tr><td><b>LEVEL</b><td><td><b>DESCRIPTION</b></td><td align="right"><b>CQS</b></td></tr>
+<tr><td><b>1</b><td><td>Decontrolled</td><td align="right">0.00</td></tr>
+<tr><td><b>2</b><td><td>Reactive</td><td align="right">0.18</td></tr>
+<tr><td><b>3</b><td><td>Adaptive</td><td align="right">2.22</td></tr>
+<tr><td><b>4</b><td><td>Attentional</td><td align="right">12.21</td></tr>
+<tr><td><b>5</b><td><td>Executive</td><td align="right">41.23</td></tr>
+<tr><td><b>6</b><td><td>Emotional</td><td align="right">101.08</td></tr>
+<tr><td><b>7</b><td><td>Self-Conscious</td><td align="right">200.03</td></tr>
+<tr><td><b>8</b><td><td>Empathic</td><td align="right">341.45</td></tr>
+<tr><td><b>9</b><td><td>Social</td><td align="right">524.54</td></tr>
+<tr><td><b>10</b><td><td>Human-Like</td><td align="right">745.74</td></tr>
+<tr><td><b>11</b><td><td>Super-Conscious</td><td align="right">1000.00</td></tr>
+</table>
+
+</div>
+
+<br>&nbsp;<br>
+<hr size="1">
+
+<!-- END TABLE 1 -->
+
+
+<!-- FIG 1 -->
+
+<br>&nbsp;<br>
+<a name="fig1"><b>FIGURE 1</b></a>. CQS values for agents qualifying for levels 1 to 11.
+<table width="80%"><tr><td align="center">
+<img src="CQS_curve.png" border="0" alt="CQS Curve" align="center">
+</td></tr><tr><td align="center">
+X-axis represents the CLS value, and Y-axis the resulting CQS.
+<br>CLS is the <i>ConsScale</i> Cumulative Score. See below.
+<br>&nbsp;
+</td></tr>
+<tr><td>
+<p align="justify">The CQS curve depicted in Fig. 1 spans from 0 to 1000 in an exponential fashion, representing the cumulative synergy produced by the addition and integration of cognitive features level after level. As the perceived overall cognitive performance increases, the score also increases exponentially, providing significant values from levels 4 and 5 upwards (see <a href="#table1">Table 1</a>).
+</p>
+</td></tr></table>
+<!-- END FIG 1 -->
+
+<br>&nbsp;<br>
+<hr size="1">
+
+<!-- CALC -->
+<br>&nbsp;
+<a name="calc"><b>CALCULATING THE CQS</b></a>. The <i>ConsScale</i> Quantitative Score.
+<br>&nbsp;
+<table width="80%">
+<tr><td align="justify">
+<p align="justify">First of all, remember that you don't need to calculate the CQS yourself, you can use the online <a href="index.html"><i>ConsScale</i> Calculator</a>.
+</p>
+<p align="justify">Having a quantitative score associated with the scale is a benefit from the following points of view: on one hand, as implementations can be evaluated concretely, individual and comparative studies are possible; on the other, specific fitness functions could be defined in order to apply evolutionary computing approaches.
+</p>
+<p align="justify">The CQS is designed to cover all the possibilities that could exist in a MC implementation, i.e. all possible combinations of CS<sub>i,j</sub>.
+</p>
+<p align="justify">the CQS is able to provide a specific numerical value for each conceptual level; additionally, non-canonical implementations which do not comply exactly with a concrete level (because they also show a partial amount of features from other levels) can be quantitatively evaluated and assigned a value between two canonical levels (see <a href="#fig1">Figure 1</a>).
+</p>
+<p align="left"><b>Doing the maths:</b>
+</p>
+<p align="justify">The CQS can be calculated in three steps. First of all, the quantitative score for each particular level in the scale (L<sub>i</sub>) has to be determined. Basically, L<sub>i</sub> represents to what extend the implementation under evaluation complies with a given level i. Provided that the implementation fulfills the corresponding architectural requirements, the number of cognitive skills (CS<sub>i,j</sub>) present in the agent is taken into account. 
+</p>
+<p align="justify">Even though the total number of cognitive skills considered for each level is different, the calculation of Li has to be pondered equally for all levels; in other words, L<sub>i</sub> is to provide a measure of the degree of accomplishment of level i, independently of the total number of cognitive features defined for each level. As mentioned in the definition of the scale, the first three levels (-1, 0, and 1) are of reference value, but they do not have any associated cognitive skills, therefore L<sub>-1</sub>, L<sub>0</sub>, and L<sub>1</sub> are always 0 and there is no need to perform any calculation. For the rest of levels (2 to 11) the equation (1) is to be resolved.
+</p>
+<p align="left"><b>Equation 1:</b>
+</p>
+<p align="center"><img src="eq1.png" width="320" border=0></p>
+<p align="justify">Where ncsf (number of cognitive skills fulfilled) is the number of cognitive skills (CS<sub>i,j</sub>) that the agent entirely fulfills, J is the maximum number of cognitive skills considered for any level (10 in ConsScale V2), and J<sub>i</sub> is the total number of cognitive skills defined in level i. L<sub>i</sub> is designed as an exponential curve in order to provide a meaningful value correlated with the existing synergy between the various cognitive skills that can be present at a certain level. Minimum possible value of L<sub>i</sub> is 0 and maximum value is 1. The latter means that level i is fully accomplished by the implementation.
+</p>
+<p align="justify">Once the value of L<sub>i</sub> has been calculated for each level, a Cumulative Level Score (CLS) can be obtained as indicated in equation (2).
+</p>
+<p align="left"><b>Equation 2:</b>
+</p>
+<p align="center"><img src="eq2.png" width="260" border=0></p>
+<p align="justify">CLS combines all particular level scores into a single measure that follows a logarithmic progression. The arrangement of the cumulative measure prevents the overall scale meaning to be distorted by the combined effect of poor L<sub>i</sub> scores in lower levels with high scores in higher levels. In other words, CLS enforces the quantitative measure to follow the same guideline as indicated in the qualitative measure.
+</p>
+<p align="justify">Finally, the CQS score is obtained evaluating the exponential function defined in equation (3).
+</p>
+<p align="left"><b>Equation 3:</b>
+<p align="center"><img src="eq3.png" width="300" border=0></p>
+<p align="justify">Where K and a are constant numbers (0.97062765 and -1 respectively) specifically defined to normalize the score possible values from 0 to 1000. Consequently, the minimum score is 0 (which corresponds to ConsScale levels -1, 0, and 1) and maximum level of artificial consciousness is represented by a CQS of 1000 (for level 11).
+</p>
+<p align="justify">See [1] for more details about the CQS.
+</p>
+
+<br>&nbsp;<br>
+<hr size="1">
+
+<p align="center"><b><a name="videocqs">Video CQS</a>. Brief Description of ConsScale Quantitative Score (3 min.).</b>
+</p>
+<p align="center"><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/81QLA9fBmA8&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/81QLA9fBmA8&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+</p>
+
+<br>&nbsp;<br>
+<hr size="1">
+
+<p align="left"><font size="1">[1] Arrabales, R. Ledezma, A. and Sanchis, A. "<a href="http://www.conscious-robots.com/raul/papers/Arrabales_ICCI09_preprint.pdf">Establishing a Roadmap and Metrics for Conscious Machines Development</a>". In Proceedings of the 8th IEEE International Confenrence on Cognitive Informatics. G. Baciu, Y. Wang, Y.Y. Yao, W. Kinsner, K. Chan & L.A. Zadeh (Eds.). Hong Kong. June 2009. Pages 94-101. ISBN 978-1-4244-4642-1.
+</font>
+</p>
+
+
+</td></tr>
+</table>
+
+<!-- END CALC -->
+
+<br>
+<font style="font-size:12px">
+<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />This <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">work</span> is licenced under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Licence</a>.
+</font> 
+
+
+</div>
+
+<!-- Close main table -->
+</td>
+</tr>
+</table>
+
+
+
+
+
+</body>
+
+</html>

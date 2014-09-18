@@ -1,0 +1,794 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+
+<title>www.consscale.com | ConsScale Calculator for First Person Shooter Bots - A Machine Consciousness Scale</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ConsScale, a Machine Consciousness Scale">
+<meta name="keywords" content="consscale,machine consciousness,artificial consciousness,fps,bots,videogame,shooter,first-person,artificial intelligence,artificial agents,intelligent agents,scale,metrics,consciousness,ranking,cognitive,cognition,cognitive agents,artificial cognitive systems">
+<link rel="shortcut icon" href="http://www.consscale.com/favicon.ico" />
+
+
+<link rel="stylesheet" type="text/css" href="csstyle.css" />
+
+<!-- Move results panel on scroll so it is always visible -->
+<script src="mixc.js" type="text/javascript"></script>
+
+<script>
+function move_results()
+{
+	xMoveTo("results",2,xScrollTop()+2)
+}
+window.onscroll=move_results
+</script>
+
+<!-- Preload images -->
+<script type="text/javascript">
+<!-- 
+
+Imagem1 = new Image();
+Image0 = new Image();
+Image1 = new Image();
+Image2 = new Image();
+Image3 = new Image();
+Image4 = new Image();
+Image5 = new Image();
+Image6 = new Image();
+Image7 = new Image();
+Image8 = new Image();
+Image9 = new Image();
+Image10 = new Image();
+Image11 = new Image();
+
+Imagem1.src = "csm1.jpg";
+Image0.src = "cs0.jpg";
+Image1.src = "cs1.jpg";
+Image2.src = "cs2.jpg";
+Image3.src = "cs3.jpg";
+Image4.src = "cs4.jpg";
+Image5.src = "cs5.jpg";
+Image6.src = "cs6.jpg";
+Image7.src = "cs7.jpg";
+Image8.src = "cs8.jpg";
+Image9.src = "cs9.jpg";
+Image10.src = "cs10.jpg";
+Image11.src = "cs11.jpg";
+
+-->
+</script>
+
+
+</head>
+
+<body onload="InitConsScaleForFPS()">
+
+<!-- Include ConsScale calculation JavaScript code -->
+<script language="JavaScript" SRC="consscale.js"></script>
+
+
+<!-- Main table -->
+<table>
+<tr>
+
+
+<!-- RESULTS PANEL -->
+
+<td>
+
+<div id="results" align="center">
+<table align="center" class="resultstable">
+<tr><td>
+
+
+<!-- RESULTS TABLE -->
+
+
+<center><h1>Calculadora <i>ConsScale</i> para Bots de video juegos FPS</h1></center>
+<form name="rform">
+<table align="center">
+<tr> 
+ <td align="center">Nivel Arquitectónico</td>
+ <td align="center"><b><i>Nivel ConsScale</i></b></td>
+</tr>
+<tr>
+ <td class="BGwhite" ID="CONSSCALE_alevel">(0) Isolated</td>
+ <td class="BGyellowBorder" ID="CONSSCALE_level" align="center">(0) Isolated</td>
+</tr>
+<tr>
+ <td class="BGremarks">Gráfica del índice CQS:</td>
+ <td class="BGremarks">Perfil Cognitivo
+      <input type="radio" name="chartType" id="chartType" value="bar" checked onclick="DisplayResults();"/> Bar
+      <input type="radio" name="chartType" id="chartType" value="barh" onclick="DisplayResults();"/> HBar
+</td>
+</tr>
+<tr>
+ <td align="center" class="BGwhite" ID="CONSSCALE_image"><img src="cs0.jpg"></td>
+ <td align="center" class="BGwhite" ID="CONSSCALE_graph"><img src="http://chart.apis.google.com/chart?cht=bvs&chs=189x171&chbh=a&chd=t:0,0,0,0,0,0,0,0,0,0&chds=0.0,1.0&chco=FF0000&chls=2.0,4.0,0.0&chxt=x,y&chxl=0:|L2|L3|L4|L5|L6|L7|L8|L9|L10|L11&chm=B,FF000060,0,1.0,5.0" alt="ConsScale Radar Chart" /></td>
+</tr>
+<tr>
+ <td><hr size="1" noshade="noshade" width="100%"></td>
+ <td class="BGremarks">
+     <input type="radio" name="chartType" id="chartType" value="line" onclick="DisplayResults();"/> Line     
+     <input type="radio" name="chartType" id="chartType" value="radar" onclick="DisplayResults();"/> Radar
+     <input type="radio" name="chartType" id="chartType" value="cmeter" onclick="DisplayResults();"/> Meter
+ </td>
+</tr> 
+<tr>
+ <td><b>CLS (0 - 1.55)</b></td>
+ <td><b>CQS (0 - 1000)</b> (<a href="cqs.html"><b>?</b></a>)</td>
+</tr>
+<tr>
+ <td class="BGwhite" ID="CONSSCALE_cls" >0</td>
+ <td class="BGyellow" ID="CONSSCALE_cqs">0</td>
+</tr>
+<tr>
+ <td>&nbsp;</td>
+</tr>
+<tr>
+ <td><b>Notas</b></td>
+</tr>
+<tr>
+ <td class="BGremarks" ID="CONSSCALE_remarks">Iniciado. Use el botón Reset para borrar todo.</td>
+ <td align="center"><input type="button" name="AdaptiveButton" value="Nivel 3" onclick="FillAdaptive()"> <input type="button" name="ResetButton" value="Reset" onclick="ResetAll()"> <input type="button" name="ReportButton" value="Informe" onclick="GenerateReport('2.1 FPS')"></td>
+</tr>
+</table>
+
+Calculadora <i>ConsScale</i>. 
+<a target="_blank" href="http://www.conscious-robots.com/raul/contact-me.html">Ra&uacute;l Arrabales</a> 
+<br>Versión 2.2es (FPS) - Abr 2010
+
+</td></tr>
+</table>
+</form>
+</div>
+</td>
+
+
+
+<!-- OPTIONS SELECCTION TABLES -->
+
+
+
+<td>
+
+<div id="userinput">
+
+
+<!-- ConsScale Main Menu -->
+
+
+<center><a name="logo"><img src="logo_calc_fps.png" alt="Calculadora FPS ConsScale"></a><hr size="1">
+</center>
+
+
+<!-- End of ConsScale Main Menu -->
+
+<h1 align="center"><u>Calculadora <i>ConsScale</i> para Bots de Video Juegos de Acción en Primera Persona</u></h1>
+<center><img src="ut3.jpg" alt="FPS Bots" align="center"></center>
+<h2 align="left">
+<a href="http://www.conscious-robots.com/raul/papers/AAAIFSS09_Arrabales.pdf" target="_blank">Este artículo</a> contiene una explicación detallada de cómo usar <i>ConsScale</i> para evaluar bots de video juegos FPS.
+<br>Vea más abajo como evaluar su agente (o vea <a target="_top" href="http://www.consscale.com/es/ayuda/preguntas-frecuentes/5-can-you-show-me-an-example-of-application-of-consscale-.html">aquí</a> un ejemplo de evaluación).
+<br>También puede ver <a target="_top" href="http://www.consscale.com/es/niveles/descripcion.html">aquí</a> una descripción de los niveles de <i>ConsScale</i>.</h2>
+
+<hr size="1">
+
+<h1>Calculadora <i>ConsScale</i> para Bots FPS: Formulario de adquisición de datos.</h1> 
+<p> 
+<b>1.-</b> Seleccione los componentes arquitectónicos.<br>
+<b>2.-</b> Indique el perfil cognitivo (formulario de habilidades cognitivas [CS<sub>i,j</sub>]).<br>
+</p>
+<p><b>Uso de la calculadora:</b><br>
+- Use las casillas de verificación que aparecen más abajo para seleccionar las características de su implementación.<br>
+- Los resultados aparecerán inmediatamente en el panel izquierdo.<br> 
+- El gráfico del perfil cognitivo puede tardar hasta un segundo en aparecer.<br>
+- El botón <b>[Nivel 3]</b> carga el perfil de un agente adaptativo puro.<br>
+- Use el botón <b>[Reset]</b> para comenzar de cero (en vez de recargar página).<br>
+- Use el botón <b>[Informe]</b> para generar un informe completo de su evaluación.<br>
+</p>
+
+<hr>
+
+<form name="scaleform">
+
+<h1>Nombre y versión del agente:</h1>
+
+<table>
+	<tr valign="top">
+		<td>Introduzca el nombre (y versión) de su implementación (si quiere que aparezca cuando se genere el informe):</td>
+	</tr>
+
+	<tr valign="top">
+		<td><input type="text" name="ImpName" id="ImpName" size="40" value="Nombre:   Versión:  "></td>
+	</tr>
+</table>
+
+<h1><a name="archform">Componentes Arquitectónicos del Agente:<a></h1>
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" checked disabled/></td>
+		<td><b>E</b></td>
+		<td>Entorno del juego de acción en primera persona.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" checked disabled onload="ArchCheck(this,1);"/></td>
+		<td><b>B</b></td>
+		<td>Cuerpo del jugador simulado por software.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,1);"/></td>
+		<td><b>S<sub>propio</sub></b></td>
+		<td>El bot tiene un mecanismo de adquisición de datos de su estado interno (sensores propioceptivos).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,2);"/></td>
+		<td><b>S<sub>ext</sub></b></td>
+		<td>El bot tiene un mecanismo de adquisición de datos del entorno de juego (sensores exteroceptivos).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,3);"/></td>
+		<td><b>A</b></td>
+		<td>El bot tiene mecanismos de control de su cuerpo (actuadores del jugador).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,4);"/></td>
+		<td><b>R</b></td>
+		<td>El bot tiene un mecanismo para generar acciones basadas en la información sensorial adquirida (mecanismo de coordinación sensoriomotora).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBoxA" onclick="ArchCheck(this,5);"/></td>
+		<td><b>M</b></td>
+		<td>El bot tiene un mecanismo para almacenar (parte de) sus estados pasados (memoria).</td>
+	</tr>
+	<tr>
+		<td><hr></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,6);"/></td>
+		<td><b>M<sup>n</sup></b></td>
+		<td>El bot es capaz de representar múltiples contextos en memoria.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,7);"/></td>
+		<td><b>Att</b></td>
+		<td>El bot tiene un mecanismo para dirigir S y A hacia un E<sub>i</sub> específico (mecanismo de atención).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,8);"/></td>
+		<td><b>SsA</b></td>
+		<td>El bot tiene un mecanismo de evaluación de su propio estado interno.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,9);"/></td>
+		<td><b>I</b></td>
+		<td>El bot tiene un mecanismo para representación de su propio yo.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,10);"/></td>
+		<td><b>O</b></td>
+		<td>El bot tiene un mecanismo para la representación de otros yos.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,11);"/></td>
+		<td><b>AR</b></td>
+		<td>El bot tiene un mecanismo para la comunicación precisa de sus estados mentales.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,12);"/></td>
+		<td><b>AVR</b></td>
+		<td>El bot tiene un mecanismo de comunicación verbal precisa de los estados mentales.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="ArchitectureBox" onclick="ArchCheck(this,13);"/></td>
+		<td><b>R<sup>n</sup></b></td>
+		<td>El bot tiene un mecanismo para ejecutar y sincronizar varios flujos concurrentes de conciencia.</td>
+	</tr>
+</table>
+
+<hr>
+
+<h1><a name="csform">Perfiles de Comportamiento (BP<sub>i,j</sub>) de los niveles <i>ConsScale</i> para bots FPS:</a></h1>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel -1. Sin cuerpo definido (<i>Disembodied</i>)</b></td>
+		<td> - L<sub>-1</sub> = </td>
+		<td>0.00</td>
+	</tr>
+</table>
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="LevelM1Box" disabled/></td>
+		<td><b>N/A</b></td>
+		<td>No se consideran BP a este nivel.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 0. Aislado (<i>Isolated</i>)</b></td>
+		<td> - L<sub>0</sub> = </td>
+		<td ID="L0">0.00</td>
+	</tr>
+</table>
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level0Box" disabled/></td>
+		<td><b>N/A</b></td>
+		<td>No se consideran BP a este nivel.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 1. Pre-funcional (<i>Decontrolled</i>)</b></td>
+		<td> - L<sub>1</sub> = </td>
+		<td ID="L1">0.00</td>
+	</tr>
+</table>
+
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level1Box" disabled/></td>
+		<td><b>N/A</b></td>
+		<td>No se consideran BP a este nivel.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 2. Reactivo (<i>Reactive</i>)</b></td>
+		<td> - L<sub>2</sub> = </td>
+		<td class="FontBlue" ID="L2">0.00</td>
+	</tr>
+</table>
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level2Box" onclick="LevelCheck(this,2,1);"/></td>
+		<td><b>BP<sub>2,1</sub></b></td>
+		<td id="BP21"><u>Reflejos básicos</u>: como la capacidad de retroceder cuando el bot choca o se bloquea con otro bot o con un obstáculo.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 3. Adaptativo (<i>Adaptive</i>)</b></td>
+		<td> - L<sub>3</sub> = </td>
+		<td class="FontBlue" ID="L3">0.00</td>
+	</tr>
+</table>
+
+<table>
+<tr>
+<td><input type="checkbox" name="Level3AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level3Box,3);" unchecked/></td>
+<td>Seleccionar/Deseleccionar Todos</td>
+</tr>
+</table>
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level3Box" onclick="LevelCheck(this,3,1);" unchecked/></td>
+		<td><b>BP<sub>3,1</sub></b></td>
+		<td id="BP31"><u>Habilidad para aprender nuevos comportamientos simples adaptados al juego</u>: Comportamientos básicos que ayudan al bot alcanzar mejores puntuaciones, como disparar a otros jugadores cuando estos son detectados.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level3Box" onclick="LevelCheck(this,3,2);"/></td>
+		<td><b>BP<sub>3,2</sub></b></td>
+		<td id="BP32"><u>Habilidad para usar el propio estado (salud, munición, etc.) para aprender nuevos comportamientos adaptativos</u>: Buscar botiquines (packs de salud) cuando el nivel de salud es bajo, o buscar munición cuando el bot se está quedando sin ella.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 4. Atencional (<i>Attentional</i>)</b></td>
+		<td> - L<sub>4</sub> = </td>
+		<td class="FontBlue" ID="L4">0.00</td>
+	</tr>
+</table>
+
+<table>
+<tr>
+<td><input type="checkbox" name="Level4AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level4Box,4);" unchecked/></td>
+<td>Seleccionar/Deseleccionar Todos</td>
+</tr>
+</table>
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,1);"/></td>
+		<td><b>BP<sub>4,1</sub></b></td>
+		<td id="BP41"><u>Habilidad para ignorar la información sensorial que no es crítica para la tarea actual</u>: Ignorar los kits de recarga de munición detectados cuando el bot está envuelto en un combate y no necesita más munición.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,2);"/></td>
+		<td><b>BP<sub>4,2</sub></b></td>
+		<td id="BP42"><u>Habilidad para descartar las acciones inadecuadas para la situación actual</u>: El bot evita acciones inútiles como disparar a las paredes cuando está huyendo de un enemigo.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,3);"/></td>
+		<td><b>BP<sub>4,3</sub></b></td>
+		<td id="BP43"><u>Habilidad para seleccionar la información que merece la pena recordar (obtener de la memoria)</u>: Cuando el bot necesita munición, accede a su memoria para obtener la posición de los kits de recarga de munición vistos anteriormente. Se dirige directamente a recoger el más cercano.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,4);"/></td>
+		<td><b>BP<sub>4,4</sub></b></td>
+		<td id="BP44"><u>Habilidad para evaluar a otros jugadores como amigos o enemigos. Habilidad para evaluar las ventajas de usar los diferentes packs de munición o salud</u>: El bot no ataca a sus amigos. Las tareas de sanación (recuperación del nivel de salud) y rearmamento se realizan rápidamente seleccionando los mejores kits de munición y de salud.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,5);"/></td>
+		<td><b>BP<sub>4,5</sub></b></td>
+		<td id="BP45"><u>Habilidad para seleccionar qué información debería almacenarse en la memoria</u>: El bot almacena en su memoria la posición de los botiquines y de los kits de munición. El bot va directamente a las posiciones recordadas cuando necesita munición o recuperar su salud (ver BP<sub>4,3</sub>).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,6);"/></td>
+		<td><b>BP<sub>4,6</sub></b></td>
+		<td id="BP46"><u>Habilidad para aprender mediante mecanismos de prueba y error</u>: El bot identifica a otros jugadores como amigos o enemigos en base a prueba y error. Si un jugador considerado actualmente como amigo (ver BP<sub>4,4</sub>) comienza a atacar al bot, se pasará  a considerarlo como enemigo y se desplegarán los comportamientos adaptativos correspondientes (huir o atacar).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,7);"/></td>
+		<td><b>BP<sub>4,7</sub></b></td>
+		<td id="BP47"><u>Habilidad para adaptar el comportamiento dirigiéndolo a objetivos específicos</u>: El bot muestra comportamientos dirigidos y sostenidos hacia sus enemigos, como perseguirlos, dispararlos continuadamente o huir de ellos.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,8);"/></td>
+		<td><b>BP<sub>4,8</sub></b></td>
+		<td id="BP48"><u>Habilidad para evaluar el propio rendimiento en combate</u>: Las acciones del bot que no contribuyen a las metas perseguidas son descartadas. Por ejemplo, el comportamiento de huida se cambia por otro cuando no contribuye a disminuir el daño recibido.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,9);"/></td>
+		<td><b>BP<sub>4,9</sub></b></td>
+		<td id="BP49"><u>Habilidad básica para planificar los siguientes movimientos</u>: El bot muestra una secuencia coherente de acciones planificadas para alcanzar una cierta meta. Por ejemplo, seguir buscando y recogiendo packs de salud hasta que el nivel de salud del bot es el máximo.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level4Box" onclick="LevelCheck(this,4,10);"/></td>
+		<td><b>BP<sub>4,10</sub></b></td>
+		<td id="BP410"><u>Habilidad para mantener una representación espacial relativa de los objetos del juego</u>: El bot es capaz de localizar objetos de forma efectiva y calcular la posición relativa de los mismos independientemente de las posiciones cambiantes de su cuerpo y sus sensores (ver BP<sub>4,7</sub>). El bot muestra una precisión de tiro aceptable.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 5. Ejecutivo (<i>Executive</i>)</b></td>
+		<td> - L<sub>5</sub> = </td>
+		<td class="FontBlue" ID="L5">0.00</td>
+	</tr>
+</table>
+
+<table>
+<tr>
+<td><input type="checkbox" name="Level5AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level5Box,5);" unchecked/></td>
+<td>Seleccionar/Deseleccionar Todos</td>
+</tr>
+</table>
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,1);"/></td>
+		<td><b>BP<sub>5,1</sub></b></td>
+		<td id="BP51"><u>Habilidad para intercalar la realización de diferentes tareas del juego</u>: Algunos comportamientos del bot se interrumpen debido a ciertas circunstancias y luego se retoman (ver BP<sub>4,9</sub>)</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,2);"/></td>
+		<td><b>BP<sub>5,2</sub></b></td>
+		<td id="BP52"><u>Habilidad para perseguir la consecución simultánea de varias metas del juego</u>: Por ejemplo, un combate se elude porque el bot necesita aumentar su nivel de salud, después de recuperar la salud, el bot continua el ataque.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,3);"/></td>
+		<td><b>BP<sub>5,3</sub></b></td>
+		<td id="BP53"><u>Habilidad para evaluar el propio rendimiento en relación a la consecución de varias metas del juego</u>: el bot estima hasta qué punto las metas se están alcanzando en base a las estrategias empleadas. Los comportamientos más efectivos se repiten con más frecuencia que los comportamientos que suelen conllevar resultados pobres.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,4);"/></td>
+		<td><b>BP<sub>5,4</sub></b></td>
+		<td id="BP54"><u>Habilidad para aprender de las experiencia pasada en el juego</u>: El bot utiliza la evaluación realizada según DCS5,3 para seleccionar las estrategias más prometedoras (ver BP<sub>5,1-3</sub>). Por ejemplo, el bot aprende a usar las armas más destructivas cuando las tiene a su disposición.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level5Box" onclick="LevelCheck(this,5,5);"/></td>
+		<td><b>BP<sub>5,5</sub></b></td>
+		<td id="BP55"><u>Habilidad para planificar acciones teniendo en cuenta todas las metas de juego activas</u>: El bot intercala sus acciones de forma efectiva tal y como requiere el cumplimiento de las múltiples metas activas. Por ejemplo, el bot modifica ligeramente su trayectoria mientras está persiguiendo y disparando a un enemigo para recoger sobre la marcha los kits de munición disponibles en las inmediaciones.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 6. Emocional (<i>Emotional</i>)</b></td>
+		<td> - L<sub>6</sub> = </td>
+		<td class="FontBlue" ID="L6">0.00</td>
+	</tr>
+</table>
+
+<table>
+<tr>
+<td><input type="checkbox" name="Level6AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level6Box,6);" unchecked/></td>
+<td>Seleccionar/Deseleccionar Todos</td>
+</tr>
+</table>
+
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,1);"/></td>
+		<td><b>BP<sub>6,1</sub></b></td>
+		<td id="BP61"><u>Habilidad para evaluar el propio estado como actor en el juego. Esta capacidad representa el aspecto funcional de las emociones</u>: El bot entra en un estado determinado dependiendo de la evaluación que realiza del propio rendimiento.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,2);"/></td>
+		<td><b>BP<sub>6,2</sub></b></td>
+		<td id="BP62"><u>Habilidad para adaptar los mecanismos de control al estado actual</u>: El comportamiento global del bot se ve modulado por el estado emocional en el que se encuentra.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,3);"/></td>
+		<td><b>BP<sub>6,3</sub></b></td>
+		<td id="BP63"><u>Habilidad para mantener una representación de las emociones tal y como se describen en BP<sub>6,1</sub></u>: Por ejemplo, si el nivel de salud es muy bajo y no se encuentran botiquines, el bot tiende a comportarse como si estuviera asustado, evitando cualquier riesgo.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,4);"/></td>
+		<td><b>BP<sub>6,4</sub></b></td>
+		<td id="BP64"><u>Habilidad para mantener una representación precisa del cuerpo del jugador</u>: El bot controla su posición, gesto y orientación de forma efectiva. Por ejemplo, es capaz de coordinar sus sistemas sensoriomotores para correr en una dirección a la vez que dispara en otra dirección, donde se encuentra un enemigo, gracias a un giro de cintura.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level6Box" onclick="LevelCheck(this,6,5);"/></td>
+		<td><b>BP<sub>6,5</sub></b></td>
+		<td id="BP65"><u>Habilidad para aprender conceptos abstractos relacionados con el juego</u>: Las decisiones inteligentes que toma el bot indican que ha aprendido conocimiento específico acerca del juego. Por ejemplo, el bot tiende a atacar enemigos solitarios, mientras que huye de grupos de enemigos.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 7. Autoconsciente (<i>Self-Conscious</i>)</b></td>
+		<td> - L<sub>7</sub> = </td>
+		<td class="FontBlue" ID="L7">0.00</td>
+	</tr>
+</table>
+
+<table>
+<tr>
+<td><input type="checkbox" name="Level7AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level7Box,7);" unchecked/></td>
+<td>Seleccionar/Deseleccionar Todos</td>
+</tr>
+</table>
+
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,1);"/></td>
+		<td><b>BP<sub>7,1</sub></b></td>
+		<td id="BP71"><u>Habilidad para mantener un modelo del yo y una representación de segundo orden de la relación entre el yo y la acción percibida en el juego</u>: El comportamiento del bot indica que está presente un sentido del yo. Las decisiones no se toman simplemente en función del estado del jugador (salud, munición, etc.), sino que se basan en un modelo elaborado del yo que constituye la base de la capacidad de TdM.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,2);"/></td>
+		<td><b>BP<sub>7,2</sub></b></td>
+		<td id="BP72"><u>Habilidad para mantener una representación análoga de segundo orden de la relación entre el yo y las acciones del bot</u>: El bot es capaz de reconocerse a sí mismo y las consecuencias de sus propias acciones.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,3);"/></td>
+		<td><b>BP<sub>7,3</sub></b></td>
+		<td id="BP73"><u>Habilidad para mantener una representación de segundo orden de la relación entre los sentimientos y el yo</u>: las acciones también se evalúan en función de sus consecuencias para el propio yo.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,4);"/></td>
+		<td><b>BP<sub>7,4</sub></b></td>
+		<td id="BP74"><u>Habilidad para auto-reconocerse como jugador y parte del juego</u>: el bot pasa la prueba del espejo.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,5);"/></td>
+		<td><b>BP<sub>7,5</sub></b></td>
+		<td id="BP75"><u>Habilidad para hacer planes incluyendo el modelo del yo como un actor en esos planes</u>: El comportamiento se modula gracias a la habilidad del bot para prever (recordar) el resultado emocional de acciones conocidas.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,6);"/></td>
+		<td><b>BP<sub>7,6</sub></b></td>
+		<td id="BP76"><u>Habilidad para imaginar el resultado para el yo de las acciones planificadas</u>: El comportamiento del bot está modulado por su habilidad para prever (imaginar) el resultado emocional de una acción planificada. Por lo tanto aparecen nuevos comportamientos como resultado de este mecanismo de planificación avanzado. Por ejemplo, el bot desarrolla nuevas estrategias de ataque que no han sido aprendidas usando aprendizaje por refuerzo, sino que han sido imaginadas.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level7Box" onclick="LevelCheck(this,7,7);"/></td>
+		<td><b>BP<sub>7,7</sub></b></td>
+		<td id="BP77"><u>Habilidad para usar los objetos del juego como herramientas</u> (dado que los juegos FPS proporcionan soporte nativo para el uso de armas y vehículos, su uso no puede considerarse como una capacidad cognitiva del bot): El bot es capaz de usar algunos objetos como medio para alcanzar sus objetivos. Por ejemplo, usando un objeto que se pueda mover, como una caja o barril, como un escudo improvisado.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 8. Empático (<i>Empathic</i>)</b></td>
+		<td> - L<sub>8</sub> = </td>
+		<td class="FontBlue" ID="L8">0.00</td>
+	</tr>
+</table>
+
+<table>
+<tr>
+<td><input type="checkbox" name="Level8AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level8Box,8);" unchecked/></td>
+<td>Seleccionar/Deseleccionar Todos</td>
+</tr>
+</table>
+
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,1);"/></td>
+		<td><b>BP<sub>8,1</sub></b></td>
+		<td id="BP81"><u>Habilidad para modelar otros jugadores como yos intencionales con subjetividad</u>: Dado que el bot puede modelar a otros jugadores como sujetos intencionales, puede predecir sus movimientos. El bot se pone (mentalmente) en el lugar de otros jugadores para poder prever las acciones de sus oponentes. El comportamiento del bot se modula no sólo en función de la información percibida, sino que también se tienen en cuenta los movimientos que previsiblemente realizará el oponente. Por ejemplo, el bot predice el posible camino de huida de un enemigo y hace el movimiento necesario para bloquearlo (incluso antes de que el oponente inicie su movimiento).</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,2);"/></td>
+		<td><b>BP<sub>8,2</sub></b></td>
+		<td id="BP82"><u>Habilidad para aprender de otros jugadores por imitación</u>: Como el bot mantiene tanto un modelo del yo como un modelo de los otros, también puede establecer analogías y aprender estrategias observando otros bots. Por ejemplo, el bot puede adquirir nuevas estrategias de ataque llevadas a cabo por jugadores humanos que participan en el mismo juego.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,3);"/></td>
+		<td><b>BP<sub>8,3</sub></b></td>
+		<td id="BP83"><u>Habilidad para colaborar con otros jugadores para obtener mejores puntuaciones</u>: Los bots muestran comportamientos sociales como la formación de grupos que colaboran en los combates.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,4);"/></td>
+		<td><b>BP<sub>8,4</sub></b></td>
+		<td id="BP84"><u>Habilidad para hacer planes incluyendo los modelos de los otros jugadores como actores en los planes (intersubjetividad)</u>: Los bots muestran comportamientos sociales como la formación de grupos que colaboran en los combates.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level8Box" onclick="LevelCheck(this,8,5);"/></td>
+		<td><b>BP<sub>8,5</sub></b></td>
+		<td id="BP85"><u>Habilidad para construir nuevas herramientas que se puedan usar para conseguir metas del juego</u>: El bot es capaz de combinar varios objetos del escenario de juego con el objetivo de crear un objeto compuesto que sirva como defensa o ataque. Por ejemplo, el bot construye una barricada improvisada hecha de barriles colocados a lo largo de una línea.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 9. Social (<i>Social</i>)</b></td>
+		<td> - L<sub>9</sub> = </td>
+		<td class="FontBlue" ID="L9">0.00</td>
+	</tr>
+</table>
+
+<table>
+<tr>
+<td><input type="checkbox" name="Level9AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level9Box,9);" unchecked/></td>
+<td>Seleccionar/Deseleccionar Todos</td>
+</tr>
+</table>
+
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level9Box" onclick="LevelCheck(this,9,1);"/></td>
+		<td><b>BP<sub>9,1</sub></b></td>
+		<td id="BP91"><u>Habilidad para desarrollar estrategias Maquiavélicas como parte del juego</u>: El bot es capaz de razonar sobre las capacidades de TdM de los oponentes. Por lo tanto, muestra comportamientos de inteligencia social, como preparar una emboscada.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level9Box" onclick="LevelCheck(this,9,2);"/></td>
+		<td><b>BP<sub>9,2</sub></b></td>
+		<td id="BP92"><u>Aprendizaje de nuevas estrategias Maquiavélicas</u>: el bot aprende nuevas estrategias Maquiavélicas que no han sido pre-programadas, como nuevas formas de engañar a los enemigos.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level9Box" onclick="LevelCheck(this,9,3);"/></td>
+		<td><b>BP<sub>9,3</sub></b></td>
+		<td id="BP93"><u>Habilidad para comunicar el contenido mental</u>: El bot usa el sistema de chat del juego para comunicar de forma coherente su estado mental explícito.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level9Box" onclick="LevelCheck(this,9,4);"/></td>
+		<td><b>BP<sub>9,4</sub></b></td>
+		<td id="BP94"><u>Habilidad para desarrollar una cultura</u>: El perfil de comportamiento asociado con la cultura requeriría un entorno más complejo. Sin embargo, se podrían observar indicios de rasgos culturales en grupos de bots organizados.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 10. Androide (<i>Human-Like</i>)</b></td>
+		<td> - L<sub>10</sub> = </td>
+		<td class="FontBlue" ID="L10">0.00</td>
+	</tr>
+</table>
+
+<table>
+<tr>
+<td><input type="checkbox" name="Level10AllBox" onclick="CompleteLevelCheck(this,document.scaleform.Level10Box,10);" unchecked/></td>
+<td>Seleccionar/Deseleccionar Todos</td>
+</tr>
+</table>
+
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level10Box" onclick="LevelCheck(this,10,1);"/></td>
+		<td><b>BP<sub>10,1</sub></b></td>
+		<td id="BP101"><u>Habilidad para comunicar de forma precisa el contenido mental</u>: el bot genera mensajes lingüísticos complejos usando una gramática correcta y un significado preciso.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level10Box" onclick="LevelCheck(this,10,2);"/></td>
+		<td><b>BP<sub>10,2</sub></b></td>
+		<td id="BP102"><u>Habilidad para superar una versión adaptada para juegos FPS del Test de Turing</u>: El bot es capaz de superar un Test de Turing adaptado, como el propuesto en la competición BotPrize.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level10Box" onclick="LevelCheck(this,10,3);"/></td>
+		<td><b>BP<sub>10,3</sub></b></td>
+		<td id="BP103"><u>Habilidad para modificar el entorno y adaptarlo a las necesidades propias</u>: Como en BP<sub>9,4</sub> los comportamientos complejos asociados con estas habilidades requieren entornos más elaborados.</td>
+	</tr>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level10Box" onclick="LevelCheck(this,10,4);"/></td>
+		<td><b>BP<sub>10,4</sub></b></td>
+		<td id="BP104"><u>Habilidad para desarrollar una civilización y una tecnología</u>: Como en BP<sub>9,4</sub> los comportamientos complejos asociados con estas habilidades requieren entornos más elaborados.</td>
+	</tr>
+</table>
+
+<br>
+
+<table>
+	<tr>
+		<td><b>Nivel 11. Super-Consciente (<i>Super-Conscious</i>)</b></td>
+		<td> - L<sub>11</sub> = </td>
+		<td class="FontBlue" ID="L11">0.00</td>
+	</tr>
+</table>
+
+<table>
+	<tr valign="top">
+		<td><input type="checkbox" name="Level11Box" onclick="LevelCheck(this,11,1);"/></td>
+		<td><b>BP<sub>11,1</sub></b></td>
+		<td id="BP111"><u>Habilidad para gestionar varios flujos de conciencia</u>: Por ejemplo, el bot es capaz de mantener una conversación explícita compleja por el chat con un humano a la vez que combate a sus enemigos de forma efectiva.</td>
+	</tr>
+</table>
+
+<hr>
+
+</form>
+
+<br>
+
+<div id="footer">
+<center>
+Formulario <i>ConsScale</i>. <a target="_blank" href="http://www.conscious-robots.com/raul/contact-me.html">Ra&uacute;l Arrabales</a> - Version 2.2es (FPS) - Abr 2010
+<br>&nbsp;<br>
+<font style="font-size:12px">
+<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />Este <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">trabajo</span> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">Licencia Creative Commons</a>.
+</font> 
+
+</center>
+</div>
+<br>&nbsp;<br>
+
+
+</div>
+
+<!-- Close main table -->
+</td>
+</tr>
+</table>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+
+<title>www.consscale.com | ConsScale - Rating the cognitive power of a creature</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="ConsScale, a Machine Consciousness Scale. Rating Procedures.">
+<meta name="keywords" content="rating,description,consscale,levels,machine consciousness,artificial consciousness,artificial intelligence,artificial agents,intelligent agents,scale,metrics,consciousness,ranking,cognitive,cognition,development,cognitive agents,artificial cognitive systems">
+<link rel="stylesheet" type="text/css" href="csstyle.css" />
+<link rel="shortcut icon" href="http://www.consscale.com/favicon.ico" />
+
+
+</head>
+
+<body>
+
+<!-- Main table -->
+<table align="center" width="80%">
+<tr>
+<td>
+
+<!-- ConsScale Main Menu -->
+
+<div align="center" id="levels">
+
+<center><a name="logo"><img src="logo_consscale.png" alt="ConsScale"></a><hr size="1">
+<a href="index.html">Home</a> | 
+<a href="calc.html">Calculator</a> | 
+<a href="levels.html">Levels</a> |
+<a href="cqs.html">CQS</a> |
+<a href="rating.html"><b>Rating</b></a> |
+<a href="faq.html">FAQ</a> |
+<a href="papers.html">Papers</a> |
+<a href="code.html">Code</a> |
+<a href="http://www.conscious-robots.com">CR</a> 
+<hr size="1"></center>
+
+<!-- End of ConsScale Main Menu -->
+
+<!-- Intro to levels -->
+<center>
+<h2 align="center">
+<i>ConsScale</i> is a scale used to rate the level of cognitive development of a creature 
+<br>as a measure of key cognitive skills integration (cognitive functions sinergy).
+</h2>
+<p align="center">
+The scale is based on the hypothesis that effective integration of these cognitive abilities (<a href="http://www.conscious-robots.com/consscale/level_tables.html#table2">CS<sub>i,j</sub></a>) and associated
+<br>architectural components (<a href="http://www.conscious-robots.com/consscale/level_tables.html">AC</a>) is required in order to develop behaviors associated with conscious beings.
+</p></center>
+
+
+<hr size="1">
+
+<div align=center>
+
+<table width="740">
+<tr>
+  <td>
+     There are two approaches to classify agents using the scale:
+     <ul>
+       <li><h1><b>1. <i>ConsScale</i> Standard Evaluation Process:</b></h1>
+         <img align="center" src="consscale_evaluation.gif" width="720" alt="ConsScale Evaluation Process" border="0" align="left">
+         <br>This process is oriented to existing implemented agents and provides an accurate and compelling measure of the level of cognitive development. However, it takes much more time and effort to be performed. 
+         <br><br>First of all, we need the actual agent and a particular problem domain definition for testing. As mentioned above, rating is based on architectural components and cognitive skills. Architectural components of the agent are identified through internal inspection of the implementation. Cognitive skills present in the agent are assessed thanks to the definition and execution of specific cognitive tests adapted to the established problem domain. Once we have the list of architectural components and cognitive skills found in the agent, we can apply <i>ConsScale</i> metrics to obtain the nominal level of consciousness, the cognitive graphical profile and the CQS score (you can use the <a href="calc.html">Online <i>ConsScale</i> Calculator</a> to do this).
+         <br><br>Note that comprehensive cognitive test/s have to be devised for each cognitive skill. These tests have to be designed in such a way that they validate the integrative and developmental inspiration of the scale. In other words, whenever possible, higher level cognitive tests will require the presence of all (or most) lower cognitive abilities in order to be passed.
+         <br><br>See <a target="_blank" href="http://www.conscious-robots.com/raul/papers/AAAIFSS09_Arrabales.pdf">this paper</a> for an example of the ConsScale Standard Evaluation Process in the domain of video game bots.
+         <br>&nbsp;<br>&nbsp;<br>          
+       </li>
+       <li><h1><b>2. <i>ConsScale</i> Simplified Rating Process:</b></h1>
+         <img align="center" src="consscale_simplified.gif" width="620" alt="ConsScale Simplified Rating Process" border="0" align="left">
+         <br>This rating process provides a quick approximation of the potential level of cognitive development of either an existing agent or even a computational model not yet implemented. The main benefit of this procedure is that a rating can be done within seconds simply using the <a href="calc.html"><i>ConsScale</i> Calculator</a>.
+         <br><br>The <i>ConsScale</i> Simplified Rating process assumes the presence of architectural components and cognitive skills just by looking at the design blueprints of the system. Therefore, there is no need to perform any test or any domain-specific instantiation of the scale.
+	 <br><br>Of course, the rating obtained following this procedure is not accurate and can be considered just a vast approximation (and probably too optimistic). In the case of implemented agents, the Standard Evaluation Process should be performed in order to obtain a more accurate and realistic measure. However, the simplified rating provides a conceptual tool to evaluate the potential <i>ConsScale</i> level of a cognitive architecture even at design time, before any implementation of the model exists. 
+	 <br><br>See <a href="#simplified_examples">below</a> for some Simplified Rating examples.
+	 <br>&nbsp; 
+       </li>
+     </ul>       
+  </td>
+</tr>
+</table>
+
+<br>&nbsp;
+
+<table style="border-width: 1px; border-style: solid; border-color: #AAAAFF" width="740">
+<tr>
+  <td>
+     <b>Comparison between Standard and Simplified Rating Methods</b>
+  </td>
+</tr>
+</table>
+<table style="border-width: 1px; border-style: solid; border-color: #AAAAEE" width="740">
+<tr style="background-color: #FEFEBB">
+  <td>
+     &nbsp;
+  </td>  
+  <td>
+     <b>Standard Rating</b>
+  </td>  
+  <td>
+     <b>Simplified Rating</b>
+  </td>  
+</tr>
+<tr>
+  <td>
+     <b>Applicability</b>
+  </td>  
+  <td>
+     Only existing implementations
+  </td>  
+  <td>
+     Models, architectures, designs, implementations
+  </td>  
+</tr>
+<tr style="background-color: #EDEDED">
+  <td>
+     <b>Accuracy</b>
+  </td>  
+  <td>
+     High (realistic metric)
+  </td>  
+  <td>
+     Low (potential, optimistic metric)
+  </td>  
+</tr>
+<tr>
+  <td>
+     <b>Cost</b>
+  </td>  
+  <td>
+     High (internal inspection of the implementation, cognitive tests design and execution)
+  </td>  
+  <td>
+     Low (architectural components and cognitive skills are inferred directly)
+  </td>  
+</tr>
+<tr style="background-color: #EDEDED">
+  <td>
+     <b>CQS Computation Time</b>
+  </td>  
+  <td>
+     Within milliseconds
+  </td>  
+  <td>
+     Within milliseconds
+  </td>  
+</tr>
+<tr>
+  <td>
+     <b>Problem Domain</b>
+  </td>  
+  <td>
+     Domain-dependent<sup>*</sup>
+  </td>  
+  <td>
+     Domain-independent
+  </td>  
+</tr>
+<tr style="background-color: #EDEDED">
+  <td>
+     <b>Required Resources</b>
+  </td>  
+  <td>
+     Suitable testing environment, test procedures and associated tools, data collection / inspection / observation tools
+  </td>  
+  <td>
+     Detailed description of the system
+  </td>  
+</tr>
+<tr>
+  <td>
+     <b>Output</b>
+  </td>  
+  <td>
+     <i>ConsScale</i> Level, Cognitive Profile, Quantitative Score
+  </td>  
+  <td>
+     <i>ConsScale</i> Level, Cognitive Profile, Quantitative Score
+  </td>  
+</tr>
+<tr style="background-color: #EDEDED">
+  <td>
+     <b>Online Resources</b>
+  </td>  
+  <td>
+     <a href="calc.html"><i>ConsScale</i> Calculator</a>
+  </td>  
+  <td>
+     <a href="calc.html"><i>ConsScale</i> Calculator</a>
+  </td>  
+</tr>
+</table>
+
+
+<table width="740" border="0">
+<tr><td>
+<span style="font-size: 12"><sup>*</sup> Actual cognitive tests are of necessity domain-dependent. They have to be performed in particular frameworks and real settings. Even the Turing test (level 10), is domain-dependent. Some authors have argued that Turing test is general-purpose, but is indeed specific to the domain of human accurate verbal interaction. 
+</span></td></tr>
+</table>
+
+
+<br>&nbsp;
+
+<hr size="1">
+
+<br>&nbsp;
+
+<table width="740">
+<tr>
+  <td>
+     <h1><a name="simplified_examples"><i>ConsScale</i> Simplified Rating Examples:</a></h1>
+  </td>
+</tr>
+<tr>
+<tr>
+  <td>
+     <ul>
+       <li><a href="#eliza">ELIZA</a></li>
+       <li><a href="#cera">UT2004 CERA-CRANIUM Adaptive-Bot</a></li>
+       <li><a href="#imagination">Minimal Architecture for Functional Imagination</a></li>
+       <li><a href="#lida">LIDA Model</a></li>
+       <li><a href="#haikonen">Haikonen's Cognitive Architecture</a></li>
+     </ul>
+  </td>
+</tr>
+<tr>
+  <td>
+     <b>Notes:</b> 
+     <br>- Simplified rating provides just an approximation of what could be the real <i>ConsScale</i> level of an implementation. 
+     <br>- Implementations (where available) should be rated using the <i>ConsScale</i> Standard Rating process (as described above) in order to obtain a more accurate and realistic measure. 
+     <br>- The rating obtained for models which have not yet been fully implemented, will have to be confirmed in the future by the application of the Standard Rating process to the corresponding implementations.
+     <br>- For implementations or models which consider a developmental period, the rating considers the potential final <i>ConsScale</i> that they would achieve at the end of their developmental period.
+  </td>
+</tr>
+</table>
+
+<br>&nbsp;
+
+<table width="740" style="border:1px solid #666666;">
+<tr style="background-color: #DEDADD"><td><b>Name of system:</b></td><td><a name="eliza"><b>ELIZA</b></a></td></tr>
+<tr><td><b>Description:</b></td><td>One of the first chatterbots (<a target="_blank" href="http://dx.doi.org/10.1145%2F365153.365168">Joseph Weithenbaum, 1966</a>).</td></tr>
+<tr style="background-color: #EEDAFD"><td><b>Architectural Components:</b></td><td>B, S<sub>ext</sub>, A, R, M (see <a href="level_tables.html">here</a> for a description)</td></tr>
+<tr style="background-color: #EEDAFD"><td><b>Cognitive Skills:</b></td><td>CS<sub>2,1</sub>; CS<sub>4,1</sub>; CS<sub>4,2</sub>; CS<sub>4,3</sub>; CS<sub>9,3</sub> (see <a href="level_tables.html#table2">here</a> for a description)</td></tr>
+<tr><td><b>Radar Graph:</b></td><td><img src="chart_ex3.png" alt="ConsScale Radar Chart"></td></tr>
+<tr><td><b>CQS Graph:</b></td><td><img src="cs2.jpg" alt="ConsScale Level 2. Reactive"></td></tr>
+<tr style="background-color: #FEFEAA"><td><b>CQS Value:</b></td><td><b>0.18</b></td></tr>
+<tr style="background-color: #EEEEAA"><td><b><i>ConsScale</i> Level:</b></td><td><b>LEVEL 2. REACTIVE.</b></td></tr>
+<tr><td><b>Comments:</b></td><td>ELIZA is basically a reactive agent designed to detect and select keywords in the input and, using a script and pattern matching techniques, provide a response in the form of accurate verbal report (CS<sub>9,3</sub>). Although this agent presents one of the highest level cognitive skills (CS<sub>9,3</sub>), the final CQS is really low because <i>ConsScale</i> primes a developmental integration of cognitive abilities. In this particular case, it doesn't matter how good is the agent at producing well-formed linguistic reports; if the "mental" content reported is not created by a suitable combination of lower level cognitive abilities, the agent cannot be considered cognitively advanced. 
+</td></tr>
+</table>
+
+<br>&nbsp;
+
+<table width="740" style="border:1px solid #666666;">
+<tr style="background-color: #DEDADD"><td><b>Name of implementation:</b></td><td><a name="cera"><b>CERA-CRANIUM UT2004 Adaptive-Bot v3.4.</b></a></td></tr>
+<tr><td><b>Description:</b></td><td>Unreal Tournament 2004 autonomous bot implemented using the CERA-CRANIUM cognitive architecture (<a target="_blank" href="http://www.conscious-robots.com/raul/papers/Arrabales_IWMC2009_v26.pdf">Raúl Arrabales, 2009</a>).</td></tr>
+<tr style="background-color: #EEDAFD"><td><b>Architectural Components:</b></td><td>B, S<sub>proprio</sub>, S<sub>ext</sub>, A, R, M (see <a href="level_tables.html">here</a> for a description)</td></tr>
+<tr style="background-color: #EEDAFD"><td><b>Cognitive Skills:</b></td><td>CS<sub>2,1</sub>; CS<sub>3,1</sub>; CS<sub>3,2</sub>; CS<sub>4,1</sub>; CS<sub>4,2</sub>; CS<sub>4,3</sub>; CS<sub>4,4</sub>; CS<sub>4,5</sub>; CS<sub>4,10</sub>; CS<sub>5,2</sub>; CS<sub>5,4</sub> (see <a href="level_tables.html#table2">here</a> for a description)</td></tr>
+<tr><td><b>Radar Graph:</b></td><td><img src="chart_ex1.png" alt="ConsScale Radar Chart"></td></tr>
+<tr><td><b>CQS Graph:</b></td><td><img src="cs3.jpg" alt="ConsScale Level 3. Adaptive"></td></tr>
+<tr style="background-color: #FEFEAA"><td><b>CQS Value:</b></td><td><b>2.69</b></td></tr>
+<tr style="background-color: #EEEEAA"><td><b><i>ConsScale</i> Level:</b></td><td><b>LEVEL 3. ADAPTIVE.</b></td></tr>
+<tr><td><b>Comments:</b></td><td>Although the implementation complies with some features of levels 4 and 5 it is rated as level 3. ConsScale requires the fulfilment of all cognitive skills of level i and also all lower levels in order to qualify as level i. <br>CQS for a pure level 3 agent is 2.22. The score of this agent (2.69) indicates that some additional features are in place. However, it is far from a level 4 agent who will score 12.21 or more. This can also be noticed in the radar graph, as L4 axis has a short spike (while L2 and L3 axes display full length lines).
+</td></tr>
+</table>
+
+<br>&nbsp;
+
+<table width="740" style="border:1px solid #666666;">
+<tr style="background-color: #DEDADD"><td><b>Name of implementation:</b></td><td><a name="imagination"><b>Minimal Architecture for Functional Imagination on CRONOS/SIMNOS</b></a></td></tr>
+<tr><td><b>Description:</b></td><td>Implementation of a functional imagination mechanism that allows an embodied agent to simulate its own actions and their sensory consequences internally, and to extract behavioural benefits from doing so (<a target="_blank" href="http://dx.doi.org/10.1016/j.neucom.2008.06.016">Hugo Gravato Marques and Owen Holland, 2009</a>).</td></tr>
+<tr style="background-color: #EEDAFD"><td><b>Architectural Components:</b></td><td>B, S<sub>proprio</sub>, S<sub>ext</sub>, A, R, M, Att (see <a href="level_tables.html">here</a> for a description)</td></tr>
+<tr style="background-color: #EEDAFD"><td><b>Cognitive Skills:</b></td><td>CS<sub>2,1</sub>; CS<sub>3,1</sub>; CS<sub>3,2</sub>; CS<sub>4,1</sub>; CS<sub>4,2</sub>; CS<sub>4,3</sub>; CS<sub>4,4</sub>; CS<sub>4,5</sub>; CS<sub>4,6</sub>; CS<sub>4,7</sub>; CS<sub>4,8</sub>; CS<sub>4,9</sub>; CS<sub>4,10</sub>; CS<sub>7,6</sub> (see <a href="level_tables.html#table2">here</a> for a description)</td></tr>
+<tr><td><b>Radar Graph:</b></td><td><img src="chart_ex4.png" alt="ConsScale Radar Chart"></td></tr>
+<tr><td><b>CQS Graph:</b></td><td><img src="cs4.jpg" alt="ConsScale Level 4. Attentional"></td></tr>
+<tr style="background-color: #FEFEAA"><td><b>CQS Value:</b></td><td><b>12.24</b></td></tr>
+<tr style="background-color: #EEEEAA"><td><b><i>ConsScale</i> Level:</b></td><td><b>LEVEL 4. ATTENTIONAL.</b></td></tr>
+<tr><td><b>Comments:</b></td><td>The application of a minimal architecture for functional imagination (CS<sub>7,6</sub>) to <a href="http://www.conscious-robots.com/en/conscious-machines/machine-consciousness-projects/cronos-project.html">CRONOS</a> is rated as <i>ConsScale</i> level 4 (using Simplified Rating), however being a minimal architecture implementation, the proposal it is very promising in terms of achieving much higher scores (by adding level 5 set shifting capabilities).
+</td></tr>
+</table>
+
+<br>&nbsp;
+
+<table width="740" style="border:1px solid #666666;">
+<tr style="background-color: #DEDADD"><td><b>Name of model:</b></td><td><a name="lida"><b>LIDA Model</b></a></td></tr>
+<tr><td><b>Description:</b></td><td>The LIDA model is a (not yet fully implemented) comprehensive, conceptual, and computational model of cognition primarily based on the Global Workspace Theory (<a target="_blank" href="http://ccrg.cs.memphis.edu/assets/papers/LIDA%20paper%20Fall%20AI%20Symposium%20Final.pdf">Franklin et al. 2007</a>; <a target="_blank" href="http://www.theassc.org/files/assc/GWT-IJMC-2009.pdf">Bernard Baars and Stan Franklin, 2009</a>).</td></tr>
+<tr style="background-color: #EEDAFD"><td><b>Architectural Components:</b></td><td>B, S<sub>proprio</sub>, S<sub>ext</sub>, A, R, M, M<sup>N</sup>, Att, SsA (see <a href="level_tables.html">here</a> for a description)</td></tr>
+<tr style="background-color: #EEDAFD"><td><b>Cognitive Skills:</b></td><td>CS<sub>2,1</sub>; CS<sub>3,1</sub>; CS<sub>3,2</sub>; CS<sub>4,1</sub>; CS<sub>4,2</sub>; CS<sub>4,3</sub>; CS<sub>4,4</sub>; CS<sub>4,5</sub>; CS<sub>4,6</sub>; CS<sub>4,7</sub>; CS<sub>4,8</sub>; CS<sub>4,9</sub>; CS<sub>4,10</sub>; CS<sub>5,1</sub>; CS<sub>5,2</sub>; CS<sub>5,3</sub>; CS<sub>5,4</sub>; CS<sub>5,5</sub>; CS<sub>6,1</sub>; CS<sub>6,2</sub>; CS<sub>6,3</sub>; CS<sub>6,4</sub>; CS<sub>6,5</sub>; CS<sub>7,6</sub> (see <a href="level_tables.html#table2">here</a> for a description)</td></tr>
+<tr><td><b>Radar Graph:</b></td><td><img src="chart_ex5.png" alt="ConsScale Radar Chart"></td></tr>
+<tr><td><b>CQS Graph:</b></td><td><img src="cs6.jpg" alt="ConsScale Level 6. Emotional"></td></tr>
+<tr style="background-color: #FEFEAA"><td><b>CQS Value:</b></td><td><b>101.36</b></td></tr>
+<tr style="background-color: #EEEEAA"><td><b><i>ConsScale</i> Level:</b></td><td><b>LEVEL 6. EMOTIONAL.</b></td></tr>
+<tr><td><b>Comments:</b></td><td>As in the case of Haikonen's architecture (below), a comprehensive testing of a full implementation of the LIDA model would be required in order to see if, for instance, the concept of self emerges in the ontology that the agent builds as part of its developmental period.
+</td></tr>
+</table>
+
+<br>&nbsp;
+
+
+<table width="740" style="border:1px solid #666666;">
+<tr style="background-color: #DEDADD"><td><b>Name of Architecture:</b></td><td><a name="haikonen"><b>Haikonen's Cognitive Architecture</b></a></td></tr>
+<tr><td><b>Description:</b></td><td>Cognitive architecture based on distributed signal representations and Haikonen Associative Neurons (<a href="http://www.conscious-robots.com/en/reviews/consciousness-books-reviews/book-review-robot-brains.html">Pentti Haikonen, 2007</a>).</td></tr>
+<tr style="background-color: #EEDAFD"><td><b>Architectural Components:</b></td><td>B, S<sub>proprio</sub>, S<sub>ext</sub>, A, R, M, Att, M<sup>N</sup>, SsA (see <a href="level_tables.html">here</a> for a description)</td></tr>
+<tr style="background-color: #EEDAFD"><td><b>Cognitive Skills:</b></td><td>CS<sub>2,1</sub>; CS<sub>3,1</sub>; CS<sub>3,2</sub>; CS<sub>4,1</sub>; CS<sub>4,2</sub>; CS<sub>4,3</sub>; CS<sub>4,4</sub>; CS<sub>4,5</sub>; CS<sub>4,6</sub>; CS<sub>4,7</sub>; CS<sub>4,8</sub>; CS<sub>4,9</sub>; CS<sub>4,10</sub>; CS<sub>5,1</sub>; CS<sub>5,2</sub>; CS<sub>5,3</sub>; CS<sub>5,4</sub>; CS<sub>5,5</sub>; CS<sub>6,1</sub>; CS<sub>6,2</sub>; CS<sub>6,3</sub>; CS<sub>6,4</sub>; CS<sub>6,5</sub>; CS<sub>7,1</sub>; CS<sub>7,2</sub>; CS<sub>7,3</sub>; CS<sub>7,4</sub>; CS<sub>9,3</sub> (see <a href="level_tables.html#table2">here</a> for a description)</td></tr>
+<tr><td><b>Radar Graph:</b></td><td><img src="chart_ex2.png" alt="ConsScale Radar Chart"></td></tr>
+<tr><td><b>CQS Graph:</b></td><td><img src="cs6.jpg" alt="ConsScale Level 6. Emotional"></td></tr>
+<tr style="background-color: #FEFEAA"><td><b>CQS Value:</b></td><td><b>114.16</b></td></tr>
+<tr style="background-color: #EEEEAA"><td><b><i>ConsScale</i> Level:</b></td><td><b>LEVEL 6. EMOTIONAL.</b></td></tr>
+<tr><td><b>Comments:</b></td><td>See <a href="http://www.conscious-robots.com/en/conscious-machines/theories-of-consciousness/pentti-haikonens-architecture-for-conscious-mac-5.html">Doan's article (page 5)</a> on Haikonen's Cognitive Architecture for a discussion on its <i>ConsScale</i> rating. The implementation and testing of a Haikonen Machine would tell us if this architecture is even able to develop the models of self and other selves, thus promoting to <i>ConsScale</i> level 7 (Self-Conscious).
+</td></tr>
+</table>
+
+<p>&nbsp;</p>
+
+
+
+<hr size="1">
+
+
+<font style="font-size:12px">
+<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br /><a href="http://www.conscious-robots.com/raul/contact-me.html">Raúl Arrabales</a>. This <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/Text" rel="dc:type">work</span> is licenced under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Licence</a>.
+</font> 
+
+</div>
+
+<!-- Close main table -->
+</td>
+</tr>
+</table>
+
+
+
+
+
+</body>
+
+</html>

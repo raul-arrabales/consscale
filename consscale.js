@@ -71,6 +71,7 @@ var LevelResults
 var curRemarks
 
 
+
 /*------------------------------*/
 /* ConsScale CS and Arch arrays */
 /*------------------------------*/
@@ -280,7 +281,8 @@ function DisplayResults()
 	CONSSCALE_remarks.innerHTML = curRemarks;
 	
 	// Display the associated radar graph
-	CONSSCALE_graph.innerHTML = MakeRadar();
+	CONSSCALE_graph.innerHTML = "Processing...";
+	CONSSCALE_graph.innerHTML = MakeGraph(getSelectedChartType(document.rform.chartType));
 }
 
 /*
@@ -1025,6 +1027,18 @@ function InitConsScale()
 
 
 /*
+ * Inicialise the ConsScale calculator specifically for the FPS Bots problem domain.
+ * Get the HTML tags for showing the results when they are calculated.
+ * Initialise the ConsScale CS matrix.
+ */
+function InitConsScaleForFPS()
+{
+	InitConsScale();
+	Arq_Flag[Arq_B] = true; 
+}
+
+
+/*
  * Get the IDs of the HTML elements that are used to show
  * the results of the calculation in the ConsScale calculator page
  */
@@ -1077,7 +1091,7 @@ function getHTMLIDs()
 function GetHTMLTag(tag)
 {
 	if ( document.getElementById )
-    {
+        {
 		return document.getElementById(tag);
 	}
 	else if ( document.all )
@@ -1091,25 +1105,262 @@ function GetHTMLTag(tag)
 }
 
 /*
- * Creates the URL for the Radar graph using Li values
+ * Get the value of the selected radio button.
  */
-function MakeRadar()
+function getSelectedChartType(ctrl)
 {
-	var graph = '<img src="http://chart.apis.google.com/chart?cht=r&chs=189x171&chd=t:';
+    for(i=0;i<ctrl.length;i++)
+        if(ctrl[i].checked) return ctrl[i].value;
+}
+
+
+/*
+ * Creates the URL for the cognitive profile graph using Li values
+ */
+function MakeGraph(type)
+{
+	var graph;
 	
-	for (i=2;i<12;i++)
+
+	// Graph URL beginning
+        if (type == "bar")
 	{
-		graph = graph + Li[i];
-		if ( i < 11 )
+          graph = '<img src="http://chart.apis.google.com/chart?cht=bvs&chs=189x171&chbh=a&chd=t:';
+        }
+        else if (type == "barh")
+        {
+           graph = '<img src="http://chart.apis.google.com/chart?cht=bhs&chs=189x171&chbh=a&chd=t:';
+        }
+        else if (type == "line")
+        {
+           graph = '<img src="http://chart.apis.google.com/chart?cht=lc&chs=189x171&chbh=a&chd=t:';
+        }        
+        else if (type == "cmeter")
+        {
+           graph = '<img src="http://chart.apis.google.com/chart?cht=gom&chs=189x171&chd=t:';
+        }
+        else // Radar
+        {
+          graph = '<img src="http://chart.apis.google.com/chart?cht=r&chs=189x171&chd=t:';
+        }
+	
+	// Populate graph data
+	if (type == "cmeter")
+	{
+		graph = graph + CQS; 	
+	}
+	if (type == "barh")
+	{
+		for (i=11;i>1;i--)
 		{
-			graph = graph + ',';
+			graph = graph + Li[i];
+			if ( i > 2 )
+			{
+				graph = graph + ',';
+			}
+		}		
+	}
+	else
+	{
+		for (i=2;i<12;i++)
+		{
+			graph = graph + Li[i];
+			if ( i < 11 )
+			{
+				graph = graph + ',';
+			}
 		}
 	}
 	
-	graph = graph + '&chds=0.0,1.0&chco=FF0000&chls=2.0,4.0,0.0&chxt=x&chxl=0:|L2|L3|L4|L5|L6|L7|L8|L9|L10&chxr=0,0.0,360.0&chm=B,FF000060,0,1.0,5.0" alt="ConsScale Radar Chart" />'
+	// Graph URL ending
+	if ( type == "bar")
+	{
+	   graph = graph + '&chds=0,1&chco=FF0000&chxt=x,y&chxr=1,0.0,1.0&chxl=0:|L2|L3|L4|L5|L6|L7|L8|L9|L10|L11&chm=B,FF000060,0,1.0,5.0" alt="ConsScale Cognitive Profile Chart" />'
+	}
+	else if (type == "barh")
+	{
+	   graph = graph + '&chds=0,1&chco=FF0000&chxt=y,x&chxr=1,0.0,1.0&chxl=0:|L2|L3|L4|L5|L6|L7|L8|L9|L10|L11&chm=B,FF000060,0,1.0,5.0" alt="ConsScale Cognitive Profile Chart" />'
+	}
+	else if (type == "line")
+	{
+	   graph = graph + '&chds=0,1&chco=FF0000&chxt=x,y&chxr=1,0.0,1.0&chxl=0:|L2|L3|L4|L5|L6|L7|L8|L9|L10|L11&chm=B,FF000060,0,1.0,5.0" alt="ConsScale Cognitive Profile Chart" />'
+	}	
+	else if (type == "cmeter")
+	{
+	   graph = graph + '&chtt=Consciousness-meter&chds=0.0,1000.0&chco=8888AA,FF0000&chxt=x,y&chxl=0:|'
+	   graph = graph + LevelName[Q_level];
+	   graph = graph + '|1:|Reactive|Human-Like&chm=B,FF000060,0,1.0,5.0" alt="ConsScale Cognitive Profile Chart" />'		
+	}
+	else
+	{
+	   graph = graph + '&chds=0.0,1.0&chco=FF0000&chls=2.0,4.0,0.0&chxt=x&chxl=0:|L2|L3|L4|L5|L6|L7|L8|L9|L10&chxr=0,0.0,360.0&chm=B,FF000060,0,1.0,5.0" alt="ConsScale Cognitive Profile Chart" />'
+	}
 	
 	return graph;
 	
+}
+
+
+
+
+
+/*
+ * Generates a report with the current state of rating
+ */
+function GenerateReport(version)
+{
+		
+	// Create a new document for the report
+	w = window.open("","ConsScale_Calculator_Report","left=100,top=0,scrollbars=yes,resizable=yes,location=yes,status=yes,menubar=yes");
+	if ( screen.availWidth < 800+100 )
+	{
+		w.resizeTo(screen.availWidth,screen.availHeight);
+	}
+	else
+	{
+		w.resizeTo(800,screen.availHeight);
+	}
+  	var reportDoc = w.document.open("text/html","replace");
+  
+  	// Timestamp
+  	today = new Date();
+  	  	
+  	// Fill the report
+        var reportText = '<html><head><link rel="stylesheet" type="text/css" href="csstyle.css" /></head><body><h1 class="FontDarkBlue">Report generated by <i>ConsScale</i> Calculator</h1>';
+        
+        reportText += "<form><input type=button name=print value='Print' onClick='javascript:window.print()'><input type=button name=save value='Save' onClick='javascript:document.execCommand(\"SaveAs\",true,\"ConsScale_report.html\")'><input type=button name=copy value='Copy HTML' onClick='window.clipboardData.setData(\"Text\", document.getElementById(\"tabla\").innerHTML);'><input type=button name=close value='Close Window' onClick='javascript:window.close()'></form>"; 
+        reportText += "<table><tr><td class='footer'>(Use [File - Save as] to save this report including images)</td></tr></table><hr>";        
+        
+        reportText += "<div id='tabla'><p><b>Report generated:</b> " + today.toString(); 
+        
+        reportText += "<br><b>Name of agent:</b> " + document.getElementById('ImpName').value;
+
+        reportText += "<br><b><i>ConsScale</i> Version:</b> " + version + "</p>";
+        
+
+  	reportDoc.write(reportText);
+	
+	reportText = "<p></p><h1>MAIN RESULTS:</h1><table class='ResultsTable'>";
+
+	reportText += "<tr><td><b><i>ConsScale</i> Level:</b></td><td class='BGYellowBorder'>" + CONSSCALE_level.innerHTML  + "</td></tr>";
+	reportText += "<tr><td><b>CQS (0-1000):</b></td><td class='BGYellowBorder'><b>" + CONSSCALE_cqs.innerHTML  + "</b></td></tr>";
+	reportText += "<tr><td><b>Cognitive Profile:</b></td><td class='BGYellowBorder'><b>" + CONSSCALE_graph.innerHTML  + "</b></td></tr>";
+
+	reportText += "</table>";
+	
+  	reportDoc.write(reportText);
+  	
+  	reportText = "<h1>ADDITIONAL RESULTS:</h1>";
+  	
+  	reportText += "<table class='ResultsTable' width='328'><tr><td><b>Architectural Level:</b></td><td>" + CONSSCALE_level.innerHTML  + "</td></tr>"; 
+  	reportText += "<tr><td><b>CLS (0-1.55):</b></td><td>" + CONSSCALE_cls.innerHTML  + "</td></tr>"; 
+  	reportText += "<tr><td><b>Comments:</b></td><td>" + CONSSCALE_remarks.innerHTML  + "</td></tr>"; 
+  	reportText += "<tr><td><b>CQS Graph:</b></td><td>" + CONSSCALE_image.innerHTML  + "</td></tr>"; 
+  	reportText += "</table>";
+  	
+  	reportDoc.write(reportText);
+  	
+	reportText = "<h1>AGENT EVALUATION DETAILS:</h1>";
+  	
+  	ArchComps = ""; 
+  	if ( Arq_Flag[Arq_B] )
+  	{
+  		ArchComps += "B (body) ";
+  	}
+  	if ( Arq_Flag[Arq_Sproprio] )
+  	{
+  		ArchComps += "S<sub>proprio</sub> (proprioceptive sensing) ";
+  	}
+  	if ( Arq_Flag[Arq_Sext] )
+  	{
+  		ArchComps += "S<sub>ext</sub> (exteroceptive sensing) ";
+  	}
+  	if ( Arq_Flag[Arq_A] )
+  	{
+  		ArchComps += "A (action machinery) ";
+  	}
+  	if ( Arq_Flag[Arq_R] )
+  	{
+  		ArchComps += "R (sensorimotor coordination) ";
+  	}
+  	if ( Arq_Flag[Arq_M] )
+  	{
+  		ArchComps += "M (memory) ";
+  	}
+  	if ( Arq_Flag[Arq_Mn] )
+  	{
+  		ArchComps += "M<sub>n</sub> (multiple context memory) ";
+  	}
+  	if ( Arq_Flag[Arq_Att] )
+  	{
+  		ArchComps += "Att (attention mechanism) ";
+  	}
+  	if ( Arq_Flag[Arq_SsA] )
+  	{
+  		ArchComps += "SsA (self-status assessment) ";
+  	}
+  	if ( Arq_Flag[Arq_I] )
+  	{
+  		ArchComps += "I (self model) ";
+  	}
+  	if ( Arq_Flag[Arq_O] )
+  	{
+  		ArchComps += "O (other selves model) ";
+  	}
+  	if ( Arq_Flag[Arq_AR] )
+  	{
+  		ArchComps += "AR (accurate report) ";
+  	}
+  	if ( Arq_Flag[Arq_AVR] )
+  	{
+  		ArchComps += "AVR (accurate verbal report) ";
+  	}
+  	if ( Arq_Flag[Arq_Rn] )
+  	{
+  		ArchComps += "Rn (several streams of consciousness) ";
+  	}
+  	 
+  	reportText += "<table class='ResultsTable' width='200'><tr><td><b><i>ConsScale</i> Levels Score:</b></td></tr></table>";   	  
+  	reportText += "<table class='ResultsTable' width='200'>";   	  
+  	for (i=2;i<12;i++)
+  	{
+  		reportText += "<tr><td><b>L<sub>" + i + "</sub>:</b></td><td width='80' class='BGYellowBorder'>" + Li[i] + "</td></tr>";
+  	}
+  	reportText += "</table><br>";
+  	  	
+  	reportText += "<table class='ResultsTable' width='600'><tr><td><b>Architectural Components:</b></td><td>" + ArchComps  + "</td></tr></table>"; 
+  	
+  	reportText += "<br><table class='ResultsTable' width='600'><tr><td><b>Behavioral Profiles (BP) fulfilled by the agent:</b></td></tr>"; 
+  	  	
+  	BPs = "<br>";   	
+  	for (i=0;i<TopLevel+1;i++)
+	{
+ 		for (k=1;k<Ji[i]+1;k++)
+		{
+			if ( ConsScaleMatrix[i][k] == 1)
+			{
+				BPName = "BP" + i + k;
+				BPDesc = " ";
+				tag = document.getElementById(BPName);
+				if ( tag != null )
+				{
+					BPDesc = tag.innerHTML;
+				}
+				BPs += "<b>BP<sub>" + i + "," + k + "</sub></b> -> " + BPDesc + "<br><br>";
+			}
+		}
+	}
+	
+	reportText += "<tr><td>" + BPs + "</td></tr>";   	  	
+	
+	
+  	reportText += "</table>";   	  	
+  	
+  	reportText += "</div></body></html>";
+  	
+  	reportDoc.write(reportText);
+  	reportDoc.close();    
+
 }
 
 
